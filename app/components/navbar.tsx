@@ -1,9 +1,4 @@
 import React, { useState } from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Button from 'react-bootstrap/Button';
 
 function MyNavBar() {
   const [copied, setCopied] = useState(false);
@@ -36,41 +31,31 @@ function MyNavBar() {
     }
   };
 
-  return (
-    <Navbar expand="lg" className="bg-dark navbar-dark" style={{ position: 'relative', zIndex: 2000 }}>
-      <Container>
-        <Navbar.Brand href="/">Termininator</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/festivals">Festivalplaner</Nav.Link>
-            <Nav.Link href="/calendar">Kalenderübersicht</Nav.Link>
-            <Nav.Link target="_blank" href="https://www.input23.de/impressum.html">Impressum</Nav.Link>
+  const [open, setOpen] = useState(false);
 
-            
-            {/*<NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>*/}
-          </Nav>
+  return (
+    <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div className="container">
+        <a className="navbar-brand" href="/">Termininator</a>
+        <button className="navbar-toggler" type="button" onClick={() => setOpen((s) => !s)} aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon" />
+        </button>
+
+        <div className={`collapse navbar-collapse ${open ? 'show' : ''}`}>
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
+            <li className="nav-item"><a className="nav-link" href="/festivals">Festivalplaner</a></li>
+            <li className="nav-item"><a className="nav-link" href="/calendar">Kalenderübersicht</a></li>
+            <li className="nav-item"><a className="nav-link" target="_blank" href="https://www.input23.de/impressum.html">Impressum</a></li>
+          </ul>
 
           <div className="d-flex align-items-center">
-            <Button variant="outline-primary" size="sm" onClick={shareLiked}>
-              Teilen
-            </Button>
+            <button type="button" className="btn btn-outline-primary btn-sm" onClick={shareLiked}>Teilen</button>
             {copied && <span style={{ marginLeft: 8, color: 'green' }}>kopiert</span>}
           </div>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+        </div>
+      </div>
+    </nav>
   );
 }
 

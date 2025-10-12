@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
 import { startOfMonth, endOfMonth, eachDayOfInterval, format, addMonths, startOfWeek, endOfWeek, addDays, getMonth, getYear, differenceInCalendarDays } from 'date-fns';
 import { de } from 'date-fns/locale';
 
@@ -59,6 +57,7 @@ export default function Overview() {
   const likedDaysMap = buildLikedDaysMap(festivals, likedIds);
 
   const [selectedDay, setSelectedDay] = useState<string | null>(null);
+  const [hoveredDay, setHoveredDay] = useState<string | null>(null);
 
   const closeModal = () => setSelectedDay(null);
 
@@ -67,9 +66,9 @@ export default function Overview() {
   const months = Array.from({ length: 12 }, (_, i) => i);
 
   return (
-    <main className="container mx-auto p-4">
-      <h1 className="text-2xl mb-4">Übersicht 2026</h1>
-      <div className="grid grid-cols-3 gap-4">
+    <main className="container py-4">
+      <h1 className="mb-4">Übersicht 2026</h1>
+      <div className="row">
         {months.map((m) => {
           const monthStart = startOfMonth(new Date(year, m));
           const monthEnd = endOfMonth(monthStart);
@@ -87,72 +86,96 @@ export default function Overview() {
           }
 
           return (
-            <div key={m} className="border rounded p-2">
-              <h2 className="text-lg font-semibold">{format(monthStart, 'LLLL', { locale: de })}</h2>
-              <div className="grid grid-cols-7 gap-1 text-xs mt-2">
-                {['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'].map((d) => (
-                  <div key={d} className="text-center font-medium">{d}</div>
-                ))}
+            <div key={m} className="col-md-4 mb-4">
+              <div className="card h-100 shadow-sm">
+                <div className="card-body">
+                  <h2 className="h5 card-title">{format(monthStart, 'LLLL', { locale: de })}</h2>
 
-                {weeks.map((week, wi) => (
-                  week.map((day) => {
-                    const key = format(day, 'yyyy-MM-dd');
-                    const inMonth = getMonth(day) === m;
-                    const festivalsHere = likedDaysMap[key] || [];
-                    const count = festivalsHere.length;
+                  <div className="row gx-1 align-items-start small mt-2">
+                    {['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'].map((d) => (
+                      <div key={d} className="col text-center fw-bold small">{d}</div>
+                    ))}
+                  </div>
 
-                    // background color based on count
-                    let bg = 'bg-white';
-                    if (count === 1) bg = 'bg-yellow-200';
-                    else if (count > 1) bg = 'bg-red-200';
+                  {weeks.map((week, wi) => (
+                    <div key={wi} className="row gx-1 mt-1">
+                      {week.map((day) => {
+                        const key = format(day, 'yyyy-MM-dd');
+                        const inMonth = getMonth(day) === m;
+                        const festivalsHere = likedDaysMap[key] || [];
+                        const count = festivalsHere.length;
 
-                    return (
-                      <div key={key} className={`h-16 p-1 border ${inMonth ? '' : 'text-gray-400'}`}>
-                        <div
-                          role={count > 0 ? 'button' : undefined}
-                          onClick={() => count > 0 && setSelectedDay(key)}
-                          className={`w-full h-full rounded p-1 ${inMonth ? bg : ''} ${count > 0 ? 'cursor-pointer' : ''}`}
-                        >
-                          <div className="text-xs">{format(day, 'd')}</div>
-                          {count > 0 && (
-                            <div className="mt-1 text-xs">
-                              {count} {count === 1 ? 'Festival' : 'Festivals'}
+                        // choose bootstrap background classes
+                        let bgClass = '';
+                        if (count === 1) bgClass = 'bg-warning';
+                        else if (count > 1) bgClass = 'bg-danger text-white';
+
+                        return (
+                          <div key={key} className={`col p-1`}>
+                            <div
+                              onMouseEnter={() => setHoveredDay(key)}
+                              onMouseLeave={() => setHoveredDay(null)}
+                              className={`w-100 h-100 rounded p-1 border position-relative ${inMonth ? bgClass : 'text-muted bg-light'}`}
+                              style={{ minHeight: '4rem' }}
+                            >
+                              <div className="d-flex justify-content-between align-items-start">
+                                <div className="small">{format(day, 'd')}</div>
+                                {count > 0 && (
+                                  <span className={`badge ${count === 1 ? 'bg-warning text-dark' : 'bg-danger'}`}>{count}</span>
+                                )}
+                              </div>
+
+                              {/* show festival names on hover */}
+                              {hoveredDay === key && count > 0 && (
+                                <div className="mt-2 small">
+                                  <ul className="list-unstyled mb-0">
+                                    {festivalsHere.slice(0, 5).map((f) => (
+                                      <li key={f.id ?? f.name} className="py-1">{f.name}{f.startdatum ? ` (${format(new Date(f.startdatum), 'dd.MM.')})` : ''}</li>
+                                    ))}
+                                    {count > 5 && <li className="text-muted">und {count - 5} weitere...</li>}
+                                  </ul>
+                                </div>
+                              )}
                             </div>
-                          )}
-                        </div>
-                      </div>
-                    );
-                  })
-                ))}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           );
         })}
       </div>
 
-      <Modal show={!!selectedDay} onHide={closeModal}>
-        <Modal.Header closeButton>
-          <Modal.Title>
-            {selectedDay ? `Festivals am ${format(new Date(selectedDay), 'dd.MM.yyyy')}` : 'Festivals'}
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {selectedDay && (likedDaysMap[selectedDay] || []).length > 0 ? (
-            <ul>
-              {(likedDaysMap[selectedDay] || []).map((f) => (
-                <li key={f.id ?? f.name}>{f.name} {f.startdatum ? `(${format(new Date(f.startdatum), 'dd.MM.yyyy')})` : ''}</li>
-              ))}
-            </ul>
-          ) : (
-            <p>Keine Festivals</p>
-          )}
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={closeModal}>
-            Schließen
-          </Button>
-        </Modal.Footer>
-      </Modal>
+      {selectedDay && (
+        <div className="modal d-block" tabIndex={-1} role="dialog">
+          <div className="modal-backdrop show" onClick={closeModal}></div>
+          <div className="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">{`Festivals am ${format(new Date(selectedDay), 'dd.MM.yyyy')}`}</h5>
+                <button type="button" className="btn-close" aria-label="Schließen" onClick={closeModal}></button>
+              </div>
+              <div className="modal-body">
+                {selectedDay && (likedDaysMap[selectedDay] || []).length > 0 ? (
+                  <ul className="list-unstyled">
+                    {(likedDaysMap[selectedDay] || []).map((f) => (
+                      <li key={f.id ?? f.name} className="py-2 border-bottom">{f.name} {f.startdatum ? `(${format(new Date(f.startdatum), 'dd.MM.yyyy')})` : ''}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>Keine Festivals</p>
+                )}
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" onClick={closeModal}>Schließen</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </main>
   );
 }
