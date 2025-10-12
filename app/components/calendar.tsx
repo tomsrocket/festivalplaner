@@ -4,6 +4,7 @@ import { de } from 'date-fns/locale';
 import { useEffect, useState } from 'react';
 
 type Festival = {
+  id?: string;
   name: string;
   startdatum: string; // ISO string
   enddatum?: string;  // optional, ISO string
@@ -65,21 +66,37 @@ const Calendar2026 = () => {
   const festivalsByWeek = useFestivals2026();
   const storageKey = 'likedFestivals2026';
   const [likedFestivals, setLikedFestivals] = useState<Set<string>>(() => new Set());
+  const [copiedFor, setCopiedFor] = useState<string | null>(null);
 
+  const festivalId = (f: Festival) => f.id ?? `${f.name}::${f.startdatum}`;
+
+  // load likes from localStorage and from location.hash (share links)
   useEffect(() => {
     try {
       const raw = localStorage.getItem(storageKey);
-      if (raw) {
-        const arr: string[] = JSON.parse(raw);
-        setLikedFestivals(new Set(arr));
+      const initial = raw ? (JSON.parse(raw) as string[]) : [];
+      const next = new Set(initial || []);
+
+      // parse location.hash if present: format #id1,id2,...
+      try {
+        if (window.location && window.location.hash) {
+          const hash = window.location.hash.slice(1);
+          if (hash) {
+            const fromHash = hash.split(',').map(h => decodeURIComponent(h)).filter(Boolean);
+            fromHash.forEach(id => next.add(id));
+            // persist merged likes
+            localStorage.setItem(storageKey, JSON.stringify(Array.from(next)));
+          }
+        }
+      } catch (e) {
+        console.warn('Could not parse location.hash for shared festival ids', e);
       }
+
+      setLikedFestivals(next);
     } catch (e) {
-      // ignore JSON parse errors
       console.warn('Could not read liked festivals from localStorage', e);
     }
   }, []);
-
-  const festivalId = (f: Festival) => `${f.name}::${f.startdatum}`;
 
   const toggleLike = (f: Festival) => {
     const id = festivalId(f);
@@ -98,9 +115,26 @@ const Calendar2026 = () => {
     });
   };
 
+  const shareFestivals = async (ids: string[]) => {
+    try {
+      const encoded = ids.map(encodeURIComponent).join(',');
+      const url = `${window.location.origin}${window.location.pathname}#${encoded}`;
+      await navigator.clipboard.writeText(url);
+      setCopiedFor(encoded);
+      window.setTimeout(() => setCopiedFor(null), 2500);
+    } catch (e) {
+      console.warn('Could not copy share link', e);
+      const encoded = ids.map(encodeURIComponent).join(',');
+      const url = `${window.location.origin}${window.location.pathname}#${encoded}`;
+      window.prompt('Share link (copy):', url);
+    }
+  };
+
   return (
     <div style={{ fontFamily: 'sans-serif', padding: '1rem' }}>
-      <h1>Kalender 2026</h1>
+      <h1>Festival Kalender 2026</h1>
+       Wähle deine Lieblingsfestivals aus (Stern-Symbol links neben dem Namen anklicken)
+       <br /><br />
       {months.map((month) => {
         const monthDate = new Date(year, month);
         const monthName = format(monthDate, 'LLLL', { locale: de });
@@ -146,6 +180,25 @@ const Calendar2026 = () => {
                               <span style={{ color: '#555' }}>
                                 ({format(new Date(f.startdatum), 'dd.MM.yyyy')}{f.enddatum ? ` – ${format(new Date(f.enddatum), 'dd.MM.yyyy')}` : ''})
                               </span>
+
+                              <button
+                                onClick={() => shareFestivals([festivalId(f)])}
+                                aria-label={`Share ${f.name}`}
+                                style={{
+                                  marginLeft: '0.5rem',
+                                  border: '1px solid #ddd',
+                                  background: '#fff',
+                                  padding: '0.15rem 0.4rem',
+                                  cursor: 'pointer',
+                                  borderRadius: 4,
+                                  fontSize: '0.85rem',
+                                }}
+                              >
+                                Teilen
+                              </button>
+                              {copiedFor === encodeURIComponent(festivalId(f)) && (
+                                <span style={{ marginLeft: '0.5rem', color: 'green' }}>kopiert</span>
+                              )}
                             </li>
                           );
                         })}
