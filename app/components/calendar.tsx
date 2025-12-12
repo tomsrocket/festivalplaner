@@ -6,12 +6,27 @@ import { useEffect, useState } from 'react';
 type Festival = {
   id?: string;
   name: string;
+  ort: string;
   startdatum: string; // ISO string
   enddatum?: string;  // optional, ISO string
   [key: string]: any;
 };
 
 type FestivalsByWeek = Record<number, Festival[]>;
+const countrylookup = {
+  "be": "🇧🇪",
+  "fr": "🇫🇷",
+  "de": "🇩🇪",
+  "at": "🇦🇹",
+  "ch": "🇨🇭",
+  "nl": "🇳🇱",
+  "it": "🇮🇹",
+  "uk": "🇬🇧",
+  "es": "🇪🇸",
+  "cz": "🇨🇿",
+  "pl": "🇵🇱",
+  "dk": "🇩🇰"
+};
 
 const groupFestivalsByWeek = (festivals: Festival[]) => {
   const byWeek: FestivalsByWeek = {};
@@ -66,8 +81,7 @@ const Calendar2026 = () => {
   const festivalsByWeek = useFestivals2026();
   const storageKey = 'likedFestivals2026';
   const [likedFestivals, setLikedFestivals] = useState<Set<string>>(() => new Set());
-  const [copiedFor, setCopiedFor] = useState<string | null>(null);
-
+  
   const festivalId = (f: Festival) => f.id ?? `${f.name}::${f.startdatum}`;
 
   // load likes from localStorage and from location.hash (share links)
@@ -114,22 +128,6 @@ const Calendar2026 = () => {
       return next;
     });
   };
-
-  const shareFestivals = async (ids: string[]) => {
-    try {
-      const encoded = ids.map(encodeURIComponent).join(',');
-      const url = `${window.location.origin}${window.location.pathname}#${encoded}`;
-      await navigator.clipboard.writeText(url);
-      setCopiedFor(encoded);
-      window.setTimeout(() => setCopiedFor(null), 2500);
-    } catch (e) {
-      console.warn('Could not copy share link', e);
-      const encoded = ids.map(encodeURIComponent).join(',');
-      const url = `${window.location.origin}${window.location.pathname}#${encoded}`;
-      window.prompt('Share link (copy):', url);
-    }
-  };
-
   return (
     <div style={{ fontFamily: 'sans-serif', padding: '1rem' }}>
       <h1>Festival Kalender 2026</h1>
@@ -176,29 +174,11 @@ const Calendar2026 = () => {
                                 {liked ? '★' : '☆'}
                               </button>
 
-                              <strong style={{ marginRight: '0.5rem' }}>{f.name}</strong>
+                              <strong style={{ marginRight: '0.5rem' }}>{f.name}</strong> {countrylookup[f.land]} {f.ort}
                               <span style={{ color: '#555' }}>
                                 ({format(new Date(f.startdatum), 'dd.MM.yyyy')}{f.enddatum ? ` – ${format(new Date(f.enddatum), 'dd.MM.yyyy')}` : ''})
                               </span>
 
-                              <button
-                                onClick={() => shareFestivals([festivalId(f)])}
-                                aria-label={`Share ${f.name}`}
-                                style={{
-                                  marginLeft: '0.5rem',
-                                  border: '1px solid #ddd',
-                                  background: '#fff',
-                                  padding: '0.15rem 0.4rem',
-                                  cursor: 'pointer',
-                                  borderRadius: 4,
-                                  fontSize: '0.85rem',
-                                }}
-                              >
-                                Teilen
-                              </button>
-                              {copiedFor === encodeURIComponent(festivalId(f)) && (
-                                <span style={{ marginLeft: '0.5rem', color: 'green' }}>kopiert</span>
-                              )}
                             </li>
                           );
                         })}
