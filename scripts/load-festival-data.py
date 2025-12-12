@@ -82,9 +82,12 @@ def load_festivals_2026(url):
             if len(tds) >= 3:
                 raw_datum = tds[0].get_text(strip=True)
                 name = tds[1].get_text(strip=True)
-                ort = tds[2].get_text(strip=True)
-
-                link = None
+                plz = tds[3].get_text(strip=True)                
+                ort = tds[4].get_text(strip=True)
+                land = tds[2].get_text(strip=True)
+                if name[:6] == "Irish ":
+                    continue  # Skip Irish Festivals
+                link = ""
                 a = tds[1].find("a")
                 if a and a.has_attr("href"):
                     link = a["href"]
@@ -98,6 +101,8 @@ def load_festivals_2026(url):
                     "id": get_unique_id(name + startdatum),
                     "name": name,
                     "ort": ort,
+                    "land": land,
+                    "plz": plz,
                     "startdatum": startdatum,
                     "enddatum": enddatum,
                     "slug": link,
@@ -114,4 +119,3 @@ print(df.head(20))
 # Nachdem du deinen DataFrame 'df' erstellt hast:
 df.to_json("festivals_2026.json", orient="records", force_ascii=False, indent=2)
 print("✅ Daten gespeichert in festivals_2026.json")
-
