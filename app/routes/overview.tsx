@@ -36,12 +36,39 @@ const buildLikedDaysMap = (festivals: Festival[], likedIds: Set<string>) => {
 export default function Overview() {
   const [festivals, setFestivals] = useState<Festival[]>([]);
   const [likedIds, setLikedIds] = useState<Set<string>>(new Set());
+  const [holidays, setHolidays] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     fetch('/data/festivals_2026.json')
       .then((r) => r.json())
       .then((d) => setFestivals(d))
       .catch(() => setFestivals([]));
+
+    fetch('/data/ferien_nordrhein-westfalen_2026.ics')
+      .then((r) => r.text())
+      .then((text) => {
+        const holidaySet = new Set<string>();
+        const eventBlocks = text.split('BEGIN:VEVENT');
+        eventBlocks.forEach((block) => {
+          const dtstartMatch = block.match(/DTSTART;VALUE=DATE:(\d{8})/);
+          const dtendMatch = block.match(/DTEND;VALUE=DATE:(\d{8})/);
+          if (dtstartMatch && dtendMatch) {
+            const startStr = dtstartMatch[1];
+            const endStr = dtendMatch[1];
+            const startDate = new Date(`${startStr.slice(0,4)}-${startStr.slice(4,6)}-${startStr.slice(6,8)}`);
+            const endDate = new Date(`${endStr.slice(0,4)}-${endStr.slice(4,6)}-${endStr.slice(6,8)}`);
+            // Subtract one day from endDate since DTEND is exclusive
+            endDate.setDate(endDate.getDate() - 1);
+            const days = eachDayOfInterval({ start: startDate, end: endDate });
+            days.forEach((d) => {
+              const dateStr = format(d, 'yyyy-MM-dd');
+              holidaySet.add(dateStr);
+            });
+          }
+        });
+        setHolidays(holidaySet);
+      })
+      .catch(() => setHolidays(new Set()));
 
     try {
       const raw = localStorage.getItem('likedFestivals2026');
@@ -107,10 +134,11 @@ export default function Overview() {
 
                         // choose bootstrap background classes
                         let bgClass = '';
-                        if (count === 1) bgClass = 'bg-warning';
+                        if (holidays.has(key)) bgClass = 'bg-warning';
+                        if (count === 1) bgClass = 'bg-primary text-white';
                         else if (count > 1) bgClass = 'bg-danger text-white';
 
-                        return (
+                        return !inMonth ? (<div key={key} className={`col p-1`}><div className={`w-100 h-100`}></div></div>) : (
                           <div key={key} className={`col p-1`}>
                             <div
                               onMouseEnter={() => setHoveredDay(key)}
