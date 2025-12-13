@@ -36,7 +36,7 @@ const buildLikedDaysMap = (festivals: Festival[], likedIds: Set<string>) => {
 export default function Overview() {
   const [festivals, setFestivals] = useState<Festival[]>([]);
   const [likedIds, setLikedIds] = useState<Set<string>>(new Set());
-  const [holidays, setHolidays] = useState<Set<string>>(new Set());
+  const [holidays, setHolidays] = useState<Record<string, string>>({});
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -48,14 +48,16 @@ export default function Overview() {
     fetch('/data/ferien_nordrhein-westfalen_2026.ics')
       .then((r) => r.text())
       .then((text) => {
-        const holidaySet = new Set<string>();
+        const holidayMap: Record<string, string> = {};
         const eventBlocks = text.split('BEGIN:VEVENT');
         eventBlocks.forEach((block) => {
           const dtstartMatch = block.match(/DTSTART;VALUE=DATE:(\d{8})/);
           const dtendMatch = block.match(/DTEND;VALUE=DATE:(\d{8})/);
-          if (dtstartMatch && dtendMatch) {
+          const summaryMatch = block.match(/SUMMARY:(.*)/);
+          if (dtstartMatch && dtendMatch && summaryMatch) {
             const startStr = dtstartMatch[1];
             const endStr = dtendMatch[1];
+            const summary = summaryMatch[1].trim();
             const startDate = new Date(`${startStr.slice(0,4)}-${startStr.slice(4,6)}-${startStr.slice(6,8)}`);
             const endDate = new Date(`${endStr.slice(0,4)}-${endStr.slice(4,6)}-${endStr.slice(6,8)}`);
             // Subtract one day from endDate since DTEND is exclusive
@@ -63,13 +65,13 @@ export default function Overview() {
             const days = eachDayOfInterval({ start: startDate, end: endDate });
             days.forEach((d) => {
               const dateStr = format(d, 'yyyy-MM-dd');
-              holidaySet.add(dateStr);
+              holidayMap[dateStr] = summary;
             });
           }
         });
-        setHolidays(holidaySet);
+        setHolidays(holidayMap);
       })
-      .catch(() => setHolidays(new Set()));
+      .catch(() => setHolidays({}));
 
     try {
       const raw = localStorage.getItem('likedFestivals2026');
@@ -84,10 +86,8 @@ export default function Overview() {
 
   const likedDaysMap = buildLikedDaysMap(festivals, likedIds);
 
-  const [selectedDay, setSelectedDay] = useState<string | null>(null);
   const [hoveredDay, setHoveredDay] = useState<string | null>(null);
 
-  const closeModal = () => setSelectedDay(null);
 
   // render 12 months of 2026
   const year = 2026;
@@ -135,7 +135,7 @@ export default function Overview() {
 
                         // choose bootstrap background classes
                         let bgClass = '';
-                        if (holidays.has(key)) bgClass = 'bg-warning';
+                        if (holidays[key]) bgClass = 'bg-warning';
                         if (count === 1) bgClass = 'bg-primary text-white';
                         else if (count > 1) bgClass = 'bg-danger text-white';
 
@@ -144,7 +144,7 @@ export default function Overview() {
                             <div
                               onMouseEnter={() => setHoveredDay(key)}
                               onMouseLeave={() => setHoveredDay(null)}
-                              onMouseMove={(e) => { if (count > 0) setMousePos({ x: e.clientX + 10, y: e.clientY + 10 }); }}
+                              onMouseMove={(e) => { if (count > 0 || holidays[key]) setMousePos({ x: e.clientX + 10, y: e.clientY + 10 }); }}
                               className={`w-100 h-100 rounded p-1 border position-relative ${inMonth ? bgClass : 'text-muted bg-light'}`}
                               style={{ minHeight: '4rem' }}
                             >
@@ -167,8 +167,8 @@ export default function Overview() {
         })}
       </div>
 
-      {/* Tooltip for hovered festivals */}
-      {hoveredDay && (likedDaysMap[hoveredDay] || []).length > 0 && (
+      {/* Tooltip for hovered festivals and holidays */}
+      {hoveredDay && ((likedDaysMap[hoveredDay] && likedDaysMap[hoveredDay].length > 0) || holidays[hoveredDay]) && (
         <div
           style={{
             position: 'fixed',
@@ -183,39 +183,12 @@ export default function Overview() {
           }}
         >
           <ul className="list-unstyled mb-0">
+            {holidays[hoveredDay] && <li className="py-1 fw-bold">{holidays[hoveredDay]}</li>}
             {(likedDaysMap[hoveredDay] || []).slice(0, 5).map((f) => (
               <li key={f.id ?? f.name} className="py-1">{f.name}{f.startdatum ? ` (${format(new Date(f.startdatum), 'dd.MM.')})` : ''}</li>
             ))}
             {(likedDaysMap[hoveredDay] || []).length > 5 && <li className="text-muted">und {(likedDaysMap[hoveredDay] || []).length - 5} weitere...</li>}
           </ul>
-        </div>
-      )}
-
-      {selectedDay && (
-        <div className="modal d-block" tabIndex={-1} role="dialog">
-          <div className="modal-backdrop show" onClick={closeModal}></div>
-          <div className="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title">{`Festivals am ${format(new Date(selectedDay), 'dd.MM.yyyy')}`}</h5>
-                <button type="button" className="btn-close" aria-label="Schließen" onClick={closeModal}></button>
-              </div>
-              <div className="modal-body">
-                {selectedDay && (likedDaysMap[selectedDay] || []).length > 0 ? (
-                  <ul className="list-unstyled">
-                    {(likedDaysMap[selectedDay] || []).map((f) => (
-                      <li key={f.id ?? f.name} className="py-2 border-bottom">{f.name} {f.startdatum ? `(${format(new Date(f.startdatum), 'dd.MM.yyyy')})` : ''}</li>
-                    ))}
-                  </ul>
-                ) : (
-                  <p>Keine Festivals</p>
-                )}
-              </div>
-              <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" onClick={closeModal}>Schließen</button>
-              </div>
-            </div>
-          </div>
         </div>
       )}
     </main>
