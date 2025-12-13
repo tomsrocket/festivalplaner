@@ -37,6 +37,7 @@ export default function Overview() {
   const [festivals, setFestivals] = useState<Festival[]>([]);
   const [likedIds, setLikedIds] = useState<Set<string>>(new Set());
   const [holidays, setHolidays] = useState<Set<string>>(new Set());
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     fetch('/data/festivals_2026.json')
@@ -143,6 +144,7 @@ export default function Overview() {
                             <div
                               onMouseEnter={() => setHoveredDay(key)}
                               onMouseLeave={() => setHoveredDay(null)}
+                              onMouseMove={(e) => { if (count > 0) setMousePos({ x: e.clientX + 10, y: e.clientY + 10 }); }}
                               className={`w-100 h-100 rounded p-1 border position-relative ${inMonth ? bgClass : 'text-muted bg-light'}`}
                               style={{ minHeight: '4rem' }}
                             >
@@ -152,18 +154,6 @@ export default function Overview() {
                                   <span className={`badge ${count === 1 ? 'bg-warning text-dark' : 'bg-danger'}`}>{count}</span>
                                 )}
                               </div>
-
-                              {/* show festival names on hover */}
-                              {hoveredDay === key && count > 0 && (
-                                <div className="mt-2 small">
-                                  <ul className="list-unstyled mb-0">
-                                    {festivalsHere.slice(0, 5).map((f) => (
-                                      <li key={f.id ?? f.name} className="py-1">{f.name}{f.startdatum ? ` (${format(new Date(f.startdatum), 'dd.MM.')})` : ''}</li>
-                                    ))}
-                                    {count > 5 && <li className="text-muted">und {count - 5} weitere...</li>}
-                                  </ul>
-                                </div>
-                              )}
                             </div>
                           </div>
                         );
@@ -176,6 +166,30 @@ export default function Overview() {
           );
         })}
       </div>
+
+      {/* Tooltip for hovered festivals */}
+      {hoveredDay && (likedDaysMap[hoveredDay] || []).length > 0 && (
+        <div
+          style={{
+            position: 'fixed',
+            left: mousePos.x,
+            top: mousePos.y,
+            background: 'white',
+            border: '1px solid black',
+            padding: '5px',
+            zIndex: 1000,
+            pointerEvents: 'none',
+            boxShadow: '0 2px 5px rgba(0,0,0,0.2)'
+          }}
+        >
+          <ul className="list-unstyled mb-0">
+            {(likedDaysMap[hoveredDay] || []).slice(0, 5).map((f) => (
+              <li key={f.id ?? f.name} className="py-1">{f.name}{f.startdatum ? ` (${format(new Date(f.startdatum), 'dd.MM.')})` : ''}</li>
+            ))}
+            {(likedDaysMap[hoveredDay] || []).length > 5 && <li className="text-muted">und {(likedDaysMap[hoveredDay] || []).length - 5} weitere...</li>}
+          </ul>
+        </div>
+      )}
 
       {selectedDay && (
         <div className="modal d-block" tabIndex={-1} role="dialog">
