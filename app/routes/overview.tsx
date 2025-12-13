@@ -135,7 +135,7 @@ export default function Overview() {
 
                         // choose bootstrap background classes
                         let bgClass = '';
-                        if (holidays[key]) bgClass = 'bg-warning';
+                        if (holidays[key]) bgClass = 'bg-success-subtle';
                         if (count === 1) bgClass = 'bg-primary text-white';
                         else if (count > 1) bgClass = 'bg-danger text-white';
 
@@ -150,8 +150,8 @@ export default function Overview() {
                             >
                               <div className="d-flex justify-content-between align-items-start">
                                 <div className="small">{format(day, 'd')}</div>
-                                {count > 0 && (
-                                  <span className={`badge ${count === 1 ? 'bg-warning text-dark' : 'bg-danger'}`}>{count}</span>
+                                {count > 1 && (
+                                  <span className={`badge bg-danger-subtle text-danger-emphasis`}>{count}</span>
                                 )}
                               </div>
                             </div>
@@ -183,7 +183,7 @@ export default function Overview() {
           }}
         >
           <ul className="list-unstyled mb-0">
-            {holidays[hoveredDay] && <li className="py-1 fw-bold">{holidays[hoveredDay]}</li>}
+            {holidays[hoveredDay] && <li className="py-1 bg-body-tertiary text-dark-emphasis">{holidays[hoveredDay]}</li>}
             {(likedDaysMap[hoveredDay] || []).slice(0, 5).map((f) => (
               <li key={f.id ?? f.name} className="py-1">{f.name}{f.startdatum ? ` (${format(new Date(f.startdatum), 'dd.MM.')})` : ''}</li>
             ))}
