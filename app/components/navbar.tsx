@@ -46,6 +46,7 @@ function MyNavBar() {
             <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
             <li className="nav-item"><a className="nav-link" href="/festivals">Festivalplaner</a></li>
             <li className="nav-item"><a className="nav-link" href="/calendar">Kalenderübersicht</a></li>
+            <li className="nav-item"><a className="nav-link" href="/import">Import</a></li>
             <li className="nav-item"><a className="nav-link" target="_blank" href="https://www.input23.de/impressum.html">Impressum</a></li>
           </ul>
 
