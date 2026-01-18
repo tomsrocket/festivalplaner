@@ -8,6 +8,46 @@ export default function Component({
 }: Route.ComponentProps) {
   const [files, setFiles] = useState<string[]>([]);
   const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
+  const [selectedFile, setSelectedFile] = useState<{ key: string; name: string } | null>(null);
+  const [parsedEvents, setParsedEvents] = useState<{ date: string; title: string }[]>([]);
+
+  interface Event {
+    date: string;
+    title: string;
+  }
+
+  const parseMarkdownEvents = (content: string): Event[] => {
+    const lines = content.split("\n");
+    const events: Event[] = [];
+    
+    // Regex to match date patterns: "dd.mm." or "dd.mm.-dd.mm."
+    const dateRegex = /^\|\s*(\d{2}\.\d{2}\.(?:-\d{2}\.\d{2}\.)?)\s*\|\s*(.+?)\s*\|/;
+
+    lines.forEach((line) => {
+      const match = line.match(dateRegex);
+      if (match) {
+        const date = match[1].trim();
+        const title = match[2].trim();
+        events.push({ date, title });
+      }
+    });
+
+    return events;
+  };
+
+  const openFile = (fileKey: string, fileName: string) => {
+    const content = localStorage.getItem(fileKey);
+    if (!content) return;
+
+    const events = parseMarkdownEvents(content);
+    setSelectedFile({ key: fileKey, name: fileName });
+    setParsedEvents(events);
+  };
+
+  const closeFile = () => {
+    setSelectedFile(null);
+    setParsedEvents([]);
+  };
 
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const uploadedFiles = e.target.files;
@@ -116,101 +156,164 @@ export default function Component({
   }, []);
 
   return (
-    <main className="container mx-auto p-4 max-w-2xl">
-      <div className="space-y-6">
-        <h1 className="text-3xl font-bold">Markdown Dateien verwalten</h1>
+    <main className="container mt-4 mb-4">
+      <div className="row">
+        <div className="col-lg-8 offset-lg-2">
+          <h1 className="mb-4">Markdown Dateien verwalten</h1>
 
-        {/* Upload Section */}
-        <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:border-gray-400 transition">
-          <label className="cursor-pointer">
-            <div className="flex flex-col items-center gap-2">
-              <svg
-                className="w-12 h-12 text-gray-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 4v16m8-8H4"
-                />
-              </svg>
-              <p className="text-lg font-semibold text-gray-700">
-                Markdown Dateien hochladen
-              </p>
-              <p className="text-sm text-gray-500">
-                oder zum Durchsuchen klicken
-              </p>
-            </div>
-            <input
-              type="file"
-              multiple
-              accept=".md"
-              onChange={handleFileUpload}
-              className="hidden"
-            />
-          </label>
-        </div>
-
-        {/* Message */}
-        {message && (
-          <div
-            className={`p-4 rounded-lg ${
-              message.type === "success"
-                ? "bg-green-100 text-green-800 border border-green-300"
-                : "bg-red-100 text-red-800 border border-red-300"
-            }`}
-          >
-            {message.text}
-          </div>
-        )}
-
-        {/* Stored Files List */}
-        {files.length > 0 && (
-          <div className="space-y-3">
-            <h2 className="text-xl font-semibold">Gespeicherte Dateien ({files.length})</h2>
-            <div className="space-y-2">
-              {getMarkdownIndex().map((item: any) => (
-                <div
-                  key={item.key}
-                  className="flex items-center justify-between p-3 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 transition"
+          {/* Upload Section */}
+          <div className="border border-2 border-dashed p-5 text-center mb-4 rounded">
+            <label className="form-label" style={{ cursor: "pointer" }}>
+              <div className="d-flex flex-column align-items-center gap-2">
+                <svg
+                  className="mb-2"
+                  width="48"
+                  height="48"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  style={{ color: "#999" }}
                 >
-                  <div className="flex-1 min-w-0">
-                    <p className="font-medium text-gray-900 truncate">
-                      {item.name}
-                    </p>
-                    <p className="text-xs text-gray-500">
-                      {new Date(item.uploadedAt).toLocaleString("de-DE")}
-                    </p>
-                  </div>
-                  <div className="flex gap-2 ml-2">
-                    <button
-                      onClick={() => downloadFile(item.key, item.name)}
-                      className="px-3 py-1 text-sm bg-blue-500 text-white rounded hover:bg-blue-600 transition"
-                    >
-                      Download
-                    </button>
-                    <button
-                      onClick={() => deleteFile(item.key)}
-                      className="px-3 py-1 text-sm bg-red-500 text-white rounded hover:bg-red-600 transition"
-                    >
-                      Löschen
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 4v16m8-8H4"
+                  />
+                </svg>
+                <p className="fs-5 fw-semibold mb-0">
+                  Markdown Dateien hochladen
+                </p>
+                <p className="small text-muted mb-0">
+                  oder zum Durchsuchen klicken
+                </p>
+              </div>
+              <input
+                type="file"
+                multiple
+                accept=".md"
+                onChange={handleFileUpload}
+                className="d-none"
+              />
+            </label>
           </div>
-        )}
 
-        {/* Info Box */}
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-          <p className="text-sm text-gray-700">
+          {/* Message */}
+          {message && (
+            <div
+              className={`alert ${
+                message.type === "success"
+                  ? "alert-success"
+                  : "alert-danger"
+              } mb-4`}
+            >
+              {message.text}
+            </div>
+          )}
+
+          {/* Stored Files List */}
+          {files.length > 0 && (
+            <div className="mb-4">
+              <h2 className="mb-3">Gespeicherte Dateien ({files.length})</h2>
+              <div className="list-group">
+                {getMarkdownIndex().map((item: any) => (
+                  <div
+                    key={item.key}
+                    className="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                  >
+                    <div className="flex-grow-1">
+                      <button
+                        onClick={() => openFile(item.key, item.name)}
+                        className="btn btn-link p-0 text-start text-decoration-none fw-500"
+                        style={{ textAlign: "left" }}
+                      >
+                        {item.name}
+                      </button>
+                      <div className="small text-muted mt-1">
+                        {new Date(item.uploadedAt).toLocaleString("de-DE")}
+                      </div>
+                    </div>
+                    <div className="ms-2 d-flex gap-2">
+                      <button
+                        onClick={() => downloadFile(item.key, item.name)}
+                        className="btn btn-sm btn-primary"
+                      >
+                        Download
+                      </button>
+                      <button
+                        onClick={() => deleteFile(item.key)}
+                        className="btn btn-sm btn-danger"
+                      >
+                        Löschen
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Info Box */}
+          <div className="alert alert-info mb-0">
             <strong>Hinweis:</strong> Alle hochgeladenen Dateien werden ausschließlich
             in Ihrem Browser gespeichert. Die Daten verlassen Ihren Rechner nicht.
-          </p>
+          </div>
+
+          {/* Events List Modal */}
+          {selectedFile && (
+            <div
+              className="modal d-block"
+              style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+              onClick={closeFile}
+            >
+              <div className="modal-dialog modal-lg" onClick={(e) => e.stopPropagation()}>
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h5 className="modal-title">{selectedFile.name}</h5>
+                    <button
+                      type="button"
+                      className="btn-close"
+                      onClick={closeFile}
+                    ></button>
+                  </div>
+
+                  <div className="modal-body">
+                    {parsedEvents.length > 0 ? (
+                      <div>
+                        <p className="small text-muted mb-3">
+                          {parsedEvents.length} Termin{parsedEvents.length !== 1 ? "e" : ""} gefunden
+                        </p>
+                        <div className="table-responsive">
+                          <table className="table table-striped table-hover">
+                            <thead className="table-light">
+                              <tr>
+                                <th>Datum</th>
+                                <th>Titel</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {parsedEvents.map((event, idx) => (
+                                <tr key={idx}>
+                                  <td className="fw-500">{event.date}</td>
+                                  <td>{event.title}</td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="text-center py-5">
+                        <p className="text-muted">
+                          Keine Termine gefunden. Überprüfen Sie das Markdown-Format.
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </main>
