@@ -26,10 +26,10 @@ const COLOR_PALETTE = {
     const colors = [
       { bg: 'bg-warning', text: 'text-dark', badge: '#ffc107' },
       { bg: 'bg-info', text: 'text-white', badge: '#0dcaf0' },
-      { bg: 'bg-purple', text: 'text-white', badge: '#6f42c1' },
+      { bg: 'bg-info-subtle', text: 'text-black', badge: '#6f42c1' },
       { bg: 'bg-danger-subtle', text: 'text-danger-emphasis', badge: '#dc3545' },
       { bg: 'bg-secondary', text: 'text-white', badge: '#6c757d' },
-      { bg: 'bg-teal', text: 'text-white', badge: '#20c997' },
+      { bg: 'bg-success', text: 'text-white', badge: '#20c997' },
     ];
     return colors[index % colors.length];
   }
