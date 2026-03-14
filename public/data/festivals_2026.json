@@ -1,214 +1,5 @@
 [
   {
-    "id":"6k3",
-    "name":"DreiKoenigsRock",
-    "ort":"Parsberg",
-    "land":"de",
-    "plz":"92331",
-    "startdatum":"2026-01-03",
-    "enddatum":"2026-01-03",
-    "slug":"dreikoenigsrock",
-    "rawdatum":"03.01."
-  },
-  {
-    "id":"Wh3",
-    "name":"Evil New Year",
-    "ort":"Heidelberg",
-    "land":"de",
-    "plz":"69115",
-    "startdatum":"2026-01-03",
-    "enddatum":"2026-01-03",
-    "slug":"evil_new_year",
-    "rawdatum":"03.01."
-  },
-  {
-    "id":"FLX",
-    "name":"Ice Rock",
-    "ort":"Hornbach",
-    "land":"ch",
-    "plz":"3457",
-    "startdatum":"2026-01-08",
-    "enddatum":"2026-01-10",
-    "slug":"ice_rock",
-    "rawdatum":"08.01.-10.01."
-  },
-  {
-    "id":"5iZ",
-    "name":"Garo Snow Festival",
-    "ort":"Les Angles",
-    "land":"fr",
-    "plz":"66210",
-    "startdatum":"2026-01-09",
-    "enddatum":"2026-01-10",
-    "slug":"garo_snow_festival",
-    "rawdatum":"09.01.-10.01."
-  },
-  {
-    "id":"GCW",
-    "name":"Grind Here Right Now",
-    "ort":"Trier",
-    "land":"de",
-    "plz":"54290",
-    "startdatum":"2026-01-09",
-    "enddatum":"2026-01-10",
-    "slug":"grind_here_right_now",
-    "rawdatum":"09.01.-10.01."
-  },
-  {
-    "id":"e0n",
-    "name":"Bavarian Battle Winter",
-    "ort":"Rosenheim",
-    "land":"de",
-    "plz":"83022",
-    "startdatum":"2026-01-10",
-    "enddatum":"2026-01-10",
-    "slug":"bavarian_battle",
-    "rawdatum":"10.01."
-  },
-  {
-    "id":"31o",
-    "name":"Eskape Festival Winter",
-    "ort":"Caen",
-    "land":"fr",
-    "plz":"14000",
-    "startdatum":"2026-01-10",
-    "enddatum":"2026-01-10",
-    "slug":"eskape_festival_winter",
-    "rawdatum":"10.01."
-  },
-  {
-    "id":"x49",
-    "name":"Galaktika",
-    "ort":"Lübeck",
-    "land":"de",
-    "plz":"23554",
-    "startdatum":"2026-01-10",
-    "enddatum":"2026-01-10",
-    "slug":"galaktika",
-    "rawdatum":"10.01."
-  },
-  {
-    "id":"PF7",
-    "name":"Owls N Bats Winterfest",
-    "ort":"Detmold",
-    "land":"de",
-    "plz":"32756",
-    "startdatum":"2026-01-10",
-    "enddatum":"2026-01-10",
-    "slug":"owls_n_bats_winterfest",
-    "rawdatum":"10.01."
-  },
-  {
-    "id":"68r",
-    "name":"Pop Freaks Festival",
-    "ort":"Stuttgart",
-    "land":"de",
-    "plz":"70178",
-    "startdatum":"2026-01-10",
-    "enddatum":"2026-01-31",
-    "slug":"pop_freaks_festival",
-    "rawdatum":"10.01.-31.01."
-  },
-  {
-    "id":"Qvn",
-    "name":"Rockafreeze",
-    "ort":"Königsbrunn",
-    "land":"de",
-    "plz":"86343",
-    "startdatum":"2026-01-10",
-    "enddatum":"2026-01-10",
-    "slug":"rockafreeze",
-    "rawdatum":"10.01."
-  },
-  {
-    "id":"SVF",
-    "name":"SKA Delicious",
-    "ort":"Leipzig",
-    "land":"de",
-    "plz":"04229",
-    "startdatum":"2026-01-10",
-    "enddatum":"2026-01-10",
-    "slug":"ska_delicious",
-    "rawdatum":"10.01."
-  },
-  {
-    "id":"gI1",
-    "name":"Up To 11-Festival",
-    "ort":"Hof",
-    "land":"de",
-    "plz":"95030",
-    "startdatum":"2026-01-10",
-    "enddatum":"2026-01-10",
-    "slug":"up_to_11_festival",
-    "rawdatum":"10.01."
-  },
-  {
-    "id":"Cop",
-    "name":"Eurosonic Noorderslag",
-    "ort":"Groningen",
-    "land":"nl",
-    "plz":"9700",
-    "startdatum":"2026-01-14",
-    "enddatum":"2026-01-17",
-    "slug":"eurosonic_festival_noorderslag",
-    "rawdatum":"14.01.-17.01."
-  },
-  {
-    "id":"sDj",
-    "name":"Ultraschall",
-    "ort":"Berlin",
-    "land":"de",
-    "plz":"10115",
-    "startdatum":"2026-01-14",
-    "enddatum":"2026-01-18",
-    "slug":"ultraschall",
-    "rawdatum":"14.01.-18.01."
-  },
-  {
-    "id":"Sx-",
-    "name":"Break The Silence Metal Festival",
-    "ort":"Dippoldiswalde",
-    "land":"de",
-    "plz":"01744",
-    "startdatum":"2026-01-17",
-    "enddatum":"2026-01-17",
-    "slug":"break_the_silence_dippoldiswalde",
-    "rawdatum":"17.01."
-  },
-  {
-    "id":"YiB",
-    "name":"Cologne Rumble",
-    "ort":"Köln",
-    "land":"de",
-    "plz":"51063",
-    "startdatum":"2026-01-17",
-    "enddatum":"2026-01-17",
-    "slug":"cologne_rumble",
-    "rawdatum":"17.01."
-  },
-  {
-    "id":"ziK",
-    "name":"Ludwigshafener Krautrock Festival",
-    "ort":"Ludwigshafen am Rhein",
-    "land":"de",
-    "plz":"67059",
-    "startdatum":"2026-01-17",
-    "enddatum":"2026-01-17",
-    "slug":"ludwigshafener_krautrock_festival",
-    "rawdatum":"17.01."
-  },
-  {
-    "id":"Ewi",
-    "name":"Puke Fest",
-    "ort":"Münster",
-    "land":"de",
-    "plz":"48155",
-    "startdatum":"2026-01-17",
-    "enddatum":"2026-01-17",
-    "slug":"puke_fest",
-    "rawdatum":"17.01."
-  },
-  {
     "id":"tx4",
     "name":"3 Tage Jazz",
     "ort":"Saalfelden",
@@ -218,6 +9,17 @@
     "enddatum":"2026-01-25",
     "slug":"3_tage_jazz",
     "rawdatum":"23.01.-25.01."
+  },
+  {
+    "id":"4ca",
+    "name":"CTM Festival",
+    "ort":"Berlin",
+    "land":"de",
+    "plz":"10115",
+    "startdatum":"2026-01-23",
+    "enddatum":"2026-02-01",
+    "slug":"club_transmediale",
+    "rawdatum":"23.01.-01.02."
   },
   {
     "id":"XQ2",
@@ -264,6 +66,28 @@
     "rawdatum":"24.01."
   },
   {
+    "id":"Wdo",
+    "name":"Winteraward",
+    "ort":"Mannheim",
+    "land":"de",
+    "plz":"68167",
+    "startdatum":"2026-01-24",
+    "enddatum":"2026-01-24",
+    "slug":"winteraward",
+    "rawdatum":"24.01."
+  },
+  {
+    "id":"yi8",
+    "name":"Internationale Kulturbörse",
+    "ort":"Freiburg im Breisgau",
+    "land":"de",
+    "plz":"79108",
+    "startdatum":"2026-01-26",
+    "enddatum":"2026-01-28",
+    "slug":"internationale_kulturboerse_freiburg",
+    "rawdatum":"26.01.-28.01."
+  },
+  {
     "id":"VyJ",
     "name":"So La La Acappella Festival",
     "ort":"Solingen",
@@ -292,9 +116,20 @@
     "land":"de",
     "plz":"73760",
     "startdatum":"2026-01-30",
-    "enddatum":"2026-01-30",
+    "enddatum":"2026-01-31",
     "slug":"exhume_the_metal_festival",
-    "rawdatum":"30.01."
+    "rawdatum":"30.01.-31.01."
+  },
+  {
+    "id":"uGu",
+    "name":"Paradise Winter Festival",
+    "ort":"Wien",
+    "land":"at",
+    "plz":"1100",
+    "startdatum":"2026-01-30",
+    "enddatum":"2026-01-31",
+    "slug":"paradise_winter_festival",
+    "rawdatum":"30.01.-31.01."
   },
   {
     "id":"VNU",
@@ -341,6 +176,28 @@
     "rawdatum":"05.02.-15.02."
   },
   {
+    "id":"hBH",
+    "name":"Festival Antigel",
+    "ort":"Genf",
+    "land":"ch",
+    "plz":"1204",
+    "startdatum":"2026-02-05",
+    "enddatum":"2026-02-28",
+    "slug":"festival_antigel",
+    "rawdatum":"05.02.-28.02."
+  },
+  {
+    "id":"NDJ",
+    "name":"One Of A Million",
+    "ort":"Baden",
+    "land":"ch",
+    "plz":"5400",
+    "startdatum":"2026-02-06",
+    "enddatum":"2026-02-14",
+    "slug":"one_of_a_million",
+    "rawdatum":"06.02.-14.02."
+  },
+  {
     "id":"JkR",
     "name":"Berlinale",
     "ort":"Berlin",
@@ -363,6 +220,17 @@
     "rawdatum":"12.02.-14.02."
   },
   {
+    "id":"lk9",
+    "name":"Rock That Swing Festival",
+    "ort":"München",
+    "land":"de",
+    "plz":"80331",
+    "startdatum":"2026-02-12",
+    "enddatum":"2026-02-16",
+    "slug":"rock_that_swing_festival",
+    "rawdatum":"12.02.-16.02."
+  },
+  {
     "id":"VVY",
     "name":"Astropolis l'Hiver",
     "ort":"Brest",
@@ -383,6 +251,17 @@
     "enddatum":"2026-02-14",
     "slug":"bluesfasching",
     "rawdatum":"13.02.-14.02."
+  },
+  {
+    "id":"EgL",
+    "name":"Dreieich rockt",
+    "ort":"Dreieich",
+    "land":"de",
+    "plz":"63303",
+    "startdatum":"2026-02-13",
+    "enddatum":"2026-02-13",
+    "slug":"dreieich_rockt",
+    "rawdatum":"13.02."
   },
   {
     "id":"MPC",
@@ -440,6 +319,39 @@
     "rawdatum":"14.02."
   },
   {
+    "id":"eQr",
+    "name":"Winter Wutzrock",
+    "ort":"Hamburg",
+    "land":"de",
+    "plz":"21029",
+    "startdatum":"2026-02-14",
+    "enddatum":"2026-02-14",
+    "slug":"winter_wutzrock",
+    "rawdatum":"14.02."
+  },
+  {
+    "id":"-K7",
+    "name":"Let It Roll Winter Edition",
+    "ort":"Prag",
+    "land":"cz",
+    "plz":"170 00",
+    "startdatum":"2026-02-20",
+    "enddatum":"2026-02-21",
+    "slug":"let_it_roll_winter_edition",
+    "rawdatum":"20.02.-21.02."
+  },
+  {
+    "id":"3rg",
+    "name":"Nordklang Festival",
+    "ort":"St. Gallen",
+    "land":"ch",
+    "plz":"9000",
+    "startdatum":"2026-02-20",
+    "enddatum":"2026-02-21",
+    "slug":"nordklang_festival",
+    "rawdatum":"20.02.-21.02."
+  },
+  {
     "id":"AIp",
     "name":"7 Vibes Journey Hamburg",
     "ort":"Hamburg",
@@ -462,6 +374,17 @@
     "rawdatum":"21.02."
   },
   {
+    "id":"HJH",
+    "name":"Death Triade",
+    "ort":"Meppen",
+    "land":"de",
+    "plz":"49716",
+    "startdatum":"2026-02-21",
+    "enddatum":"2026-02-21",
+    "slug":"death_triade",
+    "rawdatum":"21.02."
+  },
+  {
     "id":"pvD",
     "name":"Winterbeats",
     "ort":"Ingolstadt",
@@ -471,6 +394,17 @@
     "enddatum":"2026-02-21",
     "slug":"winterbeats",
     "rawdatum":"21.02."
+  },
+  {
+    "id":"itY",
+    "name":"Les Hivernales",
+    "ort":"Nyon",
+    "land":"ch",
+    "plz":"1260",
+    "startdatum":"2026-02-26",
+    "enddatum":"2026-03-01",
+    "slug":"les_hivernales",
+    "rawdatum":"26.02.-01.03."
   },
   {
     "id":"Ne-",
@@ -572,6 +506,17 @@
     "rawdatum":"05.03."
   },
   {
+    "id":"day",
+    "name":"Elevate Festival",
+    "ort":"Graz",
+    "land":"at",
+    "plz":"8010",
+    "startdatum":"2026-03-05",
+    "enddatum":"2026-03-08",
+    "slug":"elevate",
+    "rawdatum":"05.03.-08.03."
+  },
+  {
     "id":"uij",
     "name":"Fullmetal Osthessen",
     "ort":"Niederjossa",
@@ -614,6 +559,28 @@
     "enddatum":"2026-03-08",
     "slug":"mystica_hamelon",
     "rawdatum":"06.03.-08.03."
+  },
+  {
+    "id":"Qtm",
+    "name":"The Jungle Weekender",
+    "ort":"Amsterdam",
+    "land":"nl",
+    "plz":"1017",
+    "startdatum":"2026-03-06",
+    "enddatum":"2026-03-09",
+    "slug":"the_jungle_weekender",
+    "rawdatum":"06.03.-09.03."
+  },
+  {
+    "id":"TCN",
+    "name":"Wacken Winter Nights Spectaculum",
+    "ort":"Wacken",
+    "land":"de",
+    "plz":"25596",
+    "startdatum":"2026-03-06",
+    "enddatum":"2026-03-07",
+    "slug":"wacken_winter_nights",
+    "rawdatum":"06.03.-07.03."
   },
   {
     "id":"AEp",
@@ -682,6 +649,17 @@
     "rawdatum":"07.03."
   },
   {
+    "id":"gGR",
+    "name":"Still Reaching for Darkness Festival",
+    "ort":"Steinheim",
+    "land":"de",
+    "plz":"32839",
+    "startdatum":"2026-03-07",
+    "enddatum":"2026-03-07",
+    "slug":"still_reaching_for_darkness_festival",
+    "rawdatum":"07.03."
+  },
+  {
     "id":"Dls",
     "name":"Winter Circus",
     "ort":"Amsterdam",
@@ -712,6 +690,17 @@
     "startdatum":"2026-03-13",
     "enddatum":"2026-03-15",
     "slug":"elements_of_rock",
+    "rawdatum":"13.03.-15.03."
+  },
+  {
+    "id":"V2O",
+    "name":"Werder klingt",
+    "ort":"Werder (Havel)",
+    "land":"de",
+    "plz":"14542",
+    "startdatum":"2026-03-13",
+    "enddatum":"2026-03-15",
+    "slug":"werder_klingt",
     "rawdatum":"13.03.-15.03."
   },
   {
@@ -770,6 +759,28 @@
     "rawdatum":"14.03."
   },
   {
+    "id":"CiF",
+    "name":"Internationale Jazzwoche",
+    "ort":"Burghausen",
+    "land":"de",
+    "plz":"84489",
+    "startdatum":"2026-03-17",
+    "enddatum":"2026-03-22",
+    "slug":"internationale_jazzwoche",
+    "rawdatum":"17.03.-22.03."
+  },
+  {
+    "id":"xJC",
+    "name":"Neubrandenburger Jazzfrühling",
+    "ort":"Neubrandenburg",
+    "land":"de",
+    "plz":"17033",
+    "startdatum":"2026-03-18",
+    "enddatum":"2026-03-21",
+    "slug":"neubrandenburger_jazzfruehling",
+    "rawdatum":"18.03.-21.03."
+  },
+  {
     "id":"Rt_",
     "name":"Internationale Jazztage Frankenthal",
     "ort":"Frankenthal (Pfalz)",
@@ -790,6 +801,17 @@
     "enddatum":"2026-03-21",
     "slug":"mammut_festival",
     "rawdatum":"20.03.-21.03."
+  },
+  {
+    "id":"i2v",
+    "name":"BalticProg",
+    "ort":"Rostock",
+    "land":"de",
+    "plz":"18055",
+    "startdatum":"2026-03-21",
+    "enddatum":"2026-03-21",
+    "slug":"balticprog",
+    "rawdatum":"21.03."
   },
   {
     "id":"XzS",
@@ -822,17 +844,6 @@
     "startdatum":"2026-03-21",
     "enddatum":"2026-03-21",
     "slug":"heidelberg_deathfest",
-    "rawdatum":"21.03."
-  },
-  {
-    "id":"eA0",
-    "name":"Honky Tonk Stralsund",
-    "ort":"Stralsund",
-    "land":"de",
-    "plz":"18437",
-    "startdatum":"2026-03-21",
-    "enddatum":"2026-03-21",
-    "slug":"honky_tonk_stralsund",
     "rawdatum":"21.03."
   },
   {
@@ -880,15 +891,15 @@
     "rawdatum":"23.03.-28.03."
   },
   {
-    "id":"3Cu",
-    "name":"Honky Tonk Luzern",
-    "ort":"Luzern",
-    "land":"ch",
-    "plz":"6004",
+    "id":"D-W",
+    "name":"Braincrusher in Hell",
+    "ort":"Hirschaid",
+    "land":"de",
+    "plz":"96114",
     "startdatum":"2026-03-27",
-    "enddatum":"2026-03-27",
-    "slug":"honky_tonk_luzern",
-    "rawdatum":"27.03."
+    "enddatum":"2026-03-28",
+    "slug":"braincrusher_in_hell",
+    "rawdatum":"27.03.-28.03."
   },
   {
     "id":"SZk",
@@ -900,6 +911,17 @@
     "enddatum":"2026-03-28",
     "slug":"taunus_metal_festival",
     "rawdatum":"27.03.-28.03."
+  },
+  {
+    "id":"FC-",
+    "name":"Amen Festival",
+    "ort":"Kassel",
+    "land":"de",
+    "plz":"34121",
+    "startdatum":"2026-03-28",
+    "enddatum":"2026-03-28",
+    "slug":"amen_festival",
+    "rawdatum":"28.03."
   },
   {
     "id":"XA4",
@@ -1045,6 +1067,28 @@
     "rawdatum":"11.04."
   },
   {
+    "id":"Zh9",
+    "name":"Oi! The Blast",
+    "ort":"Leipzig",
+    "land":"de",
+    "plz":"04229",
+    "startdatum":"2026-04-18",
+    "enddatum":"2026-04-18",
+    "slug":"oi_the_blast",
+    "rawdatum":"18.04."
+  },
+  {
+    "id":"XTI",
+    "name":"Internationales Frauenfilmfestival",
+    "ort":"Köln",
+    "land":"de",
+    "plz":"50823",
+    "startdatum":"2026-04-22",
+    "enddatum":"2026-04-26",
+    "slug":"internationales_frauenfilmfestival",
+    "rawdatum":"22.04.-26.04."
+  },
+  {
     "id":"XkN",
     "name":"Keep It True",
     "ort":"Lauda-Königshofen",
@@ -1054,6 +1098,28 @@
     "enddatum":"2026-04-25",
     "slug":"keep_it_true",
     "rawdatum":"24.04.-25.04."
+  },
+  {
+    "id":"Hsu",
+    "name":"Mosh in den Mai",
+    "ort":"Kiel",
+    "land":"de",
+    "plz":"24143",
+    "startdatum":"2026-04-24",
+    "enddatum":"2026-04-25",
+    "slug":"mosh_in_den_mai",
+    "rawdatum":"24.04.-25.04."
+  },
+  {
+    "id":"ptZ",
+    "name":"D.I.Y. Hardcore Punk Fest",
+    "ort":"Gdynia",
+    "land":"pl",
+    "plz":"81-347",
+    "startdatum":"2026-04-25",
+    "enddatum":"2026-04-25",
+    "slug":"d_i_y_hardcore_punk_fest",
+    "rawdatum":"25.04."
   },
   {
     "id":"1bA",
@@ -1076,6 +1142,28 @@
     "enddatum":"2026-04-26",
     "slug":"mittelalterlich_phantasie_spectaculum_bad_seckingen",
     "rawdatum":"25.04.-26.04."
+  },
+  {
+    "id":"lHq",
+    "name":"Weser Metal Meeting",
+    "ort":"Reinhardshagen",
+    "land":"de",
+    "plz":"34359",
+    "startdatum":"2026-04-25",
+    "enddatum":"2026-04-25",
+    "slug":"weser_metal_meeting",
+    "rawdatum":"25.04."
+  },
+  {
+    "id":"Yuh",
+    "name":"Jazzfest Gronau",
+    "ort":"Gronau",
+    "land":"de",
+    "plz":"48599",
+    "startdatum":"2026-04-28",
+    "enddatum":"2026-05-03",
+    "slug":"jazzfest_gronau",
+    "rawdatum":"28.04.-03.05."
   },
   {
     "id":"MQw",
@@ -1122,6 +1210,17 @@
     "rawdatum":"01.05.-02.05."
   },
   {
+    "id":"LdZ",
+    "name":"Andernach Metal Days",
+    "ort":"Andernach",
+    "land":"de",
+    "plz":"56626",
+    "startdatum":"2026-05-01",
+    "enddatum":"2026-05-02",
+    "slug":"andernach_metal_days",
+    "rawdatum":"01.05.-02.05."
+  },
+  {
     "id":"oXx",
     "name":"Hellseatic Festival",
     "ort":"Bremen",
@@ -1130,6 +1229,17 @@
     "startdatum":"2026-05-01",
     "enddatum":"2026-05-02",
     "slug":"hellseatic",
+    "rawdatum":"01.05.-02.05."
+  },
+  {
+    "id":"ctL",
+    "name":"Mead & Greed Festival",
+    "ort":"Oberhausen",
+    "land":"de",
+    "plz":"46047",
+    "startdatum":"2026-05-01",
+    "enddatum":"2026-05-02",
+    "slug":"mead_und_greed_festival",
     "rawdatum":"01.05.-02.05."
   },
   {
@@ -1166,6 +1276,28 @@
     "rawdatum":"08.05.-09.05."
   },
   {
+    "id":"WJ1",
+    "name":"Pirate Fest",
+    "ort":"Rotenhain",
+    "land":"de",
+    "plz":"56459",
+    "startdatum":"2026-05-08",
+    "enddatum":"2026-05-09",
+    "slug":"pirate_fest",
+    "rawdatum":"08.05.-09.05."
+  },
+  {
+    "id":"hvt",
+    "name":"Rock-It! Festival",
+    "ort":"Moers",
+    "land":"de",
+    "plz":"47441",
+    "startdatum":"2026-05-08",
+    "enddatum":"2026-05-09",
+    "slug":"rock_it_festival",
+    "rawdatum":"08.05.-09.05."
+  },
+  {
     "id":"L0k",
     "name":"Die Schlagernacht des Jahres",
     "ort":"Köln",
@@ -1188,6 +1320,28 @@
     "rawdatum":"09.05."
   },
   {
+    "id":"kXx",
+    "name":"MIA",
+    "ort":"Altdorf",
+    "land":"de",
+    "plz":"90518",
+    "startdatum":"2026-05-09",
+    "enddatum":"2026-05-09",
+    "slug":"mia",
+    "rawdatum":"09.05."
+  },
+  {
+    "id":"cOL",
+    "name":"Rock in Caputh",
+    "ort":"Caputh",
+    "land":"de",
+    "plz":"14548",
+    "startdatum":"2026-05-09",
+    "enddatum":"2026-05-09",
+    "slug":"rock_in_caputh",
+    "rawdatum":"09.05."
+  },
+  {
     "id":"S9q",
     "name":"Sørdfest Open Air",
     "ort":"Landscheide",
@@ -1197,6 +1351,17 @@
     "enddatum":"2026-05-09",
     "slug":"sordfest_open_air",
     "rawdatum":"09.05."
+  },
+  {
+    "id":"BjT",
+    "name":"Spring Break Opening",
+    "ort":"Novalja",
+    "land":"hr",
+    "plz":"53291",
+    "startdatum":"2026-05-13",
+    "enddatum":"2026-05-17",
+    "slug":"wild_und_free_spring_break_opening",
+    "rawdatum":"13.05.-17.05."
   },
   {
     "id":"uZj",
@@ -1254,6 +1419,17 @@
     "rawdatum":"14.05.-17.05."
   },
   {
+    "id":"PK9",
+    "name":"Rock den Acker",
+    "ort":"Nidderau",
+    "land":"de",
+    "plz":"61130",
+    "startdatum":"2026-05-14",
+    "enddatum":"2026-05-16",
+    "slug":"rock_den_acker",
+    "rawdatum":"14.05.-16.05."
+  },
+  {
     "id":"_22",
     "name":"Tante Mia tanzt",
     "ort":"Vechta",
@@ -1287,6 +1463,28 @@
     "rawdatum":"16.05."
   },
   {
+    "id":"n-m",
+    "name":"Ladioo - Das Party Open Air",
+    "ort":"Vechta",
+    "land":"de",
+    "plz":"49377",
+    "startdatum":"2026-05-16",
+    "enddatum":"2026-05-16",
+    "slug":"ladioo_das_party_open_air",
+    "rawdatum":"16.05."
+  },
+  {
+    "id":"vNR",
+    "name":"Afrika Karibik Kultur Festival Starnberg",
+    "ort":"Starnberg",
+    "land":"de",
+    "plz":"82319",
+    "startdatum":"2026-05-22",
+    "enddatum":"2026-05-25",
+    "slug":"afrika_karibik_kultur_festival_starnberg",
+    "rawdatum":"22.05.-25.05."
+  },
+  {
     "id":"WD3",
     "name":"Biberttal Festival",
     "ort":"Dietenhofen",
@@ -1296,6 +1494,127 @@
     "enddatum":"2026-05-24",
     "slug":"biberttal_festival",
     "rawdatum":"22.05.-24.05."
+  },
+  {
+    "id":"1xp",
+    "name":"Big Beach Spring Break",
+    "ort":"Novalja",
+    "land":"hr",
+    "plz":"53291",
+    "startdatum":"2026-05-22",
+    "enddatum":"2026-05-25",
+    "slug":"big_beach_spring_break",
+    "rawdatum":"22.05.-25.05."
+  },
+  {
+    "id":"jfT",
+    "name":"Kulturgarten Open Air",
+    "ort":"Themar",
+    "land":"de",
+    "plz":"98660",
+    "startdatum":"2026-05-22",
+    "enddatum":"2026-05-24",
+    "slug":"kulturgarten_open_air",
+    "rawdatum":"22.05.-24.05."
+  },
+  {
+    "id":"jj2",
+    "name":"Music Across The Border",
+    "ort":"Sieniawka",
+    "land":"pl",
+    "plz":"59-921",
+    "startdatum":"2026-05-22",
+    "enddatum":"2026-05-22",
+    "slug":"music_across_the_border_pl",
+    "rawdatum":"22.05."
+  },
+  {
+    "id":"ahP",
+    "name":"Open Ohr",
+    "ort":"Mainz",
+    "land":"de",
+    "plz":"55131",
+    "startdatum":"2026-05-22",
+    "enddatum":"2026-05-25",
+    "slug":"open_ohr_festival",
+    "rawdatum":"22.05.-25.05."
+  },
+  {
+    "id":"3uE",
+    "name":"Wave-Gotik-Treffen",
+    "ort":"Leipzig",
+    "land":"de",
+    "plz":"04103",
+    "startdatum":"2026-05-22",
+    "enddatum":"2026-05-25",
+    "slug":"wave_gotik_treffen",
+    "rawdatum":"22.05.-25.05."
+  },
+  {
+    "id":"fgp",
+    "name":"Music Across The Border",
+    "ort":"Zittau",
+    "land":"de",
+    "plz":"02763",
+    "startdatum":"2026-05-23",
+    "enddatum":"2026-05-30",
+    "slug":"music_across_the_border",
+    "rawdatum":"23.05.-30.05."
+  },
+  {
+    "id":"Ado",
+    "name":"One Spirit Festival",
+    "ort":"Freudenstadt",
+    "land":"de",
+    "plz":"72250",
+    "startdatum":"2026-05-23",
+    "enddatum":"2026-05-25",
+    "slug":"rainbow_spirit_festival",
+    "rawdatum":"23.05.-25.05."
+  },
+  {
+    "id":"YUm",
+    "name":"Pfingst Spectaculum Oranienburg",
+    "ort":"Oranienburg",
+    "land":"de",
+    "plz":"16515",
+    "startdatum":"2026-05-23",
+    "enddatum":"2026-05-25",
+    "slug":"pfingst_spectaculum_oranienburg",
+    "rawdatum":"23.05.-25.05."
+  },
+  {
+    "id":"nHJ",
+    "name":"Jazztage Görlitz",
+    "ort":"Görlitz",
+    "land":"de",
+    "plz":"02826",
+    "startdatum":"2026-05-27",
+    "enddatum":"2026-06-07",
+    "slug":"jazztage_goerlitz",
+    "rawdatum":"27.05.-07.06."
+  },
+  {
+    "id":"Cil",
+    "name":"Papaya Spring Break",
+    "ort":"Novalja",
+    "land":"hr",
+    "plz":"53291",
+    "startdatum":"2026-05-28",
+    "enddatum":"2026-05-30",
+    "slug":"papaya_spring_break",
+    "rawdatum":"28.05.-30.05."
+  },
+  {
+    "id":"j3H",
+    "name":"Sea Star Festival",
+    "ort":"Monterol",
+    "land":"hr",
+    "plz":"52470",
+    "startdatum":"2026-05-28",
+    "enddatum":"2026-05-31",
+    "slug":"sea_star_festival",
+    "rawdatum":"28.05.-31.05."
   },
   {
     "id":"n1G",
@@ -1309,6 +1628,17 @@
     "rawdatum":"29.05.-01.06."
   },
   {
+    "id":"J0l",
+    "name":"Quickstock Festival",
+    "ort":"Jossgrund",
+    "land":"de",
+    "plz":"63637",
+    "startdatum":"2026-05-29",
+    "enddatum":"2026-05-30",
+    "slug":"quickstock",
+    "rawdatum":"29.05.-30.05."
+  },
+  {
     "id":"hqL",
     "name":"Rock unterm Hünstollen",
     "ort":"Holzerode",
@@ -1318,6 +1648,28 @@
     "enddatum":"2026-05-30",
     "slug":"rock_unterm_huenstollen",
     "rawdatum":"29.05.-30.05."
+  },
+  {
+    "id":"lkB",
+    "name":"Die Festung Rockt",
+    "ort":"Kronach",
+    "land":"de",
+    "plz":"96317",
+    "startdatum":"2026-05-30",
+    "enddatum":"2026-05-30",
+    "slug":"die_festung_rockt",
+    "rawdatum":"30.05."
+  },
+  {
+    "id":"p5x",
+    "name":"Spring Break Europe",
+    "ort":"Novalja",
+    "land":"hr",
+    "plz":"53291",
+    "startdatum":"2026-06-03",
+    "enddatum":"2026-06-08",
+    "slug":"spring_break_europe",
+    "rawdatum":"03.06.-08.06."
   },
   {
     "id":"MZR",
@@ -1362,6 +1714,28 @@
     "enddatum":"2026-06-07",
     "slug":"zurueck_zu_den_wurzeln_festival",
     "rawdatum":"04.06.-07.06."
+  },
+  {
+    "id":"JcT",
+    "name":"Bavarian Battle Open Air",
+    "ort":"Kirchdorf",
+    "land":"de",
+    "plz":"83527",
+    "startdatum":"2026-06-05",
+    "enddatum":"2026-06-06",
+    "slug":"bavarian_battle_open_air",
+    "rawdatum":"05.06.-06.06."
+  },
+  {
+    "id":"vf4",
+    "name":"Boarstream Open Air",
+    "ort":"Buchenbach",
+    "land":"de",
+    "plz":"74673",
+    "startdatum":"2026-06-05",
+    "enddatum":"2026-06-06",
+    "slug":"boarstream_open_air",
+    "rawdatum":"05.06.-06.06."
   },
   {
     "id":"6c7",
@@ -1419,6 +1793,17 @@
     "rawdatum":"05.06.-07.06."
   },
   {
+    "id":"cVC",
+    "name":"World Club Dome",
+    "ort":"Frankfurt am Main",
+    "land":"de",
+    "plz":"60528",
+    "startdatum":"2026-06-05",
+    "enddatum":"2026-06-07",
+    "slug":"bigcitybeats_world_music_dome",
+    "rawdatum":"05.06.-07.06."
+  },
+  {
     "id":"ugC",
     "name":"Glowing Ember Festival",
     "ort":"Hamburg",
@@ -1427,6 +1812,17 @@
     "startdatum":"2026-06-06",
     "enddatum":"2026-06-06",
     "slug":"glowing_ember_festival",
+    "rawdatum":"06.06."
+  },
+  {
+    "id":"EqD",
+    "name":"Gott sei Punk Festival",
+    "ort":"Hamburg",
+    "land":"de",
+    "plz":"20359",
+    "startdatum":"2026-06-06",
+    "enddatum":"2026-06-06",
+    "slug":"gott_sei_punk_hamburg",
     "rawdatum":"06.06."
   },
   {
@@ -1439,6 +1835,17 @@
     "enddatum":"2026-06-06",
     "slug":"hoepenair",
     "rawdatum":"06.06."
+  },
+  {
+    "id":"s83",
+    "name":"Roots Up Festival",
+    "ort":"Köln",
+    "land":"de",
+    "plz":"50735",
+    "startdatum":"2026-06-06",
+    "enddatum":"2026-06-07",
+    "slug":"roots_up",
+    "rawdatum":"06.06.-07.06."
   },
   {
     "id":"vvK",
@@ -1463,6 +1870,28 @@
     "rawdatum":"10.06.-13.06."
   },
   {
+    "id":"Civ",
+    "name":"Rock For People",
+    "ort":"Hradec Kralove",
+    "land":"cz",
+    "plz":"50341",
+    "startdatum":"2026-06-10",
+    "enddatum":"2026-06-14",
+    "slug":"rock_for_people",
+    "rawdatum":"10.06.-14.06."
+  },
+  {
+    "id":"AC0",
+    "name":"Ain't Like You Festival",
+    "ort":"Torgau",
+    "land":"de",
+    "plz":"04860",
+    "startdatum":"2026-06-11",
+    "enddatum":"2026-06-13",
+    "slug":"ain_t_like_you_festival",
+    "rawdatum":"11.06.-13.06."
+  },
+  {
     "id":"0P2",
     "name":"Greenfield Festival",
     "ort":"Interlaken",
@@ -1483,6 +1912,72 @@
     "enddatum":"2026-06-14",
     "slug":"nova_rock",
     "rawdatum":"11.06.-14.06."
+  },
+  {
+    "id":"QPv",
+    "name":"Rock for animal rights",
+    "ort":"Offenwarden",
+    "land":"de",
+    "plz":"27628",
+    "startdatum":"2026-06-11",
+    "enddatum":"2026-06-14",
+    "slug":"rock_for_animal_rights",
+    "rawdatum":"11.06.-14.06."
+  },
+  {
+    "id":"D6K",
+    "name":"Sternenklang Festival",
+    "ort":"Kranichfeld",
+    "land":"de",
+    "plz":"99448",
+    "startdatum":"2026-06-11",
+    "enddatum":"2026-06-13",
+    "slug":"sternenklang_festival",
+    "rawdatum":"11.06.-13.06."
+  },
+  {
+    "id":"4FT",
+    "name":"Wild & Free Spring Break Weekend 1",
+    "ort":"Novalja",
+    "land":"hr",
+    "plz":"53291",
+    "startdatum":"2026-06-11",
+    "enddatum":"2026-06-14",
+    "slug":"wild_und_free_weekend",
+    "rawdatum":"11.06.-14.06."
+  },
+  {
+    "id":"WWq",
+    "name":"Affenkäfig Festival",
+    "ort":"Mendig",
+    "land":"de",
+    "plz":"56743",
+    "startdatum":"2026-06-12",
+    "enddatum":"2026-06-14",
+    "slug":"affenkaefig_festival",
+    "rawdatum":"12.06.-14.06."
+  },
+  {
+    "id":"8_N",
+    "name":"Frut Festival",
+    "ort":"Pirna",
+    "land":"de",
+    "plz":"01796",
+    "startdatum":"2026-06-12",
+    "enddatum":"2026-06-13",
+    "slug":"frut_festival",
+    "rawdatum":"12.06.-13.06."
+  },
+  {
+    "id":"q_6",
+    "name":"Godless Mountain Open Air",
+    "ort":"Großdubrau",
+    "land":"de",
+    "plz":"02694",
+    "startdatum":"2026-06-12",
+    "enddatum":"2026-06-13",
+    "slug":"godless_mountain_open_air",
+    "rawdatum":"12.06.-13.06."
   },
   {
     "id":"yoz",
@@ -1507,6 +2002,39 @@
     "rawdatum":"12.06.-13.06."
   },
   {
+    "id":"Tnb",
+    "name":"WeRock! OpenAir",
+    "ort":"Ulm",
+    "land":"de",
+    "plz":"89079",
+    "startdatum":"2026-06-12",
+    "enddatum":"2026-06-13",
+    "slug":"werock_openair",
+    "rawdatum":"12.06.-13.06."
+  },
+  {
+    "id":"qNL",
+    "name":"Noise Club Sommer Festival",
+    "ort":"Garmisch-Partenkirchen",
+    "land":"de",
+    "plz":"82467",
+    "startdatum":"2026-06-13",
+    "enddatum":"2026-06-13",
+    "slug":"noise_club_sommer_festival",
+    "rawdatum":"13.06."
+  },
+  {
+    "id":"qXc",
+    "name":"Waves Open Air",
+    "ort":"Wedemark",
+    "land":"de",
+    "plz":"30900",
+    "startdatum":"2026-06-13",
+    "enddatum":"2026-06-13",
+    "slug":"waves_open_air",
+    "rawdatum":"13.06."
+  },
+  {
     "id":"nYc",
     "name":"Hellfest",
     "ort":"Clisson",
@@ -1527,6 +2055,39 @@
     "enddatum":"2026-06-21",
     "slug":"isle_of_wight_festival",
     "rawdatum":"18.06.-21.06."
+  },
+  {
+    "id":"tT9",
+    "name":"Wild & Free Spring Break Weekend 2",
+    "ort":"Novalja",
+    "land":"hr",
+    "plz":"53291",
+    "startdatum":"2026-06-18",
+    "enddatum":"2026-06-21",
+    "slug":"wild_und_free_weekend_2",
+    "rawdatum":"18.06.-21.06."
+  },
+  {
+    "id":"EwM",
+    "name":"Der Detze Rockt",
+    "ort":"Rengen",
+    "land":"de",
+    "plz":"54550",
+    "startdatum":"2026-06-19",
+    "enddatum":"2026-06-20",
+    "slug":"der_detze_rockt",
+    "rawdatum":"19.06.-20.06."
+  },
+  {
+    "id":"iKq",
+    "name":"Hive Festival",
+    "ort":"Gräfenhainichen",
+    "land":"de",
+    "plz":"06773",
+    "startdatum":"2026-06-19",
+    "enddatum":"2026-06-21",
+    "slug":"hive_festival",
+    "rawdatum":"19.06.-21.06."
   },
   {
     "id":"Pc-",
@@ -1617,6 +2178,17 @@
     "rawdatum":"20.06."
   },
   {
+    "id":"HTM",
+    "name":"Holi Festival Of Colours - Farbgefühle",
+    "ort":"Berlin",
+    "land":"de",
+    "plz":"13405",
+    "startdatum":"2026-06-20",
+    "enddatum":"2026-06-20",
+    "slug":"holi_festival_of_colours_berlin",
+    "rawdatum":"20.06."
+  },
+  {
     "id":"qmE",
     "name":"Kieler Woche",
     "ort":"Kiel",
@@ -1637,6 +2209,17 @@
     "enddatum":"2026-06-28",
     "slug":"equinoxe_vibes_festival",
     "rawdatum":"21.06.-28.06."
+  },
+  {
+    "id":"HQs",
+    "name":"Aaargh Festival",
+    "ort":"Kißlegg",
+    "land":"de",
+    "plz":"88353",
+    "startdatum":"2026-06-25",
+    "enddatum":"2026-06-27",
+    "slug":"aaargh_festival",
+    "rawdatum":"25.06.-27.06."
   },
   {
     "id":"y5F",
@@ -1661,6 +2244,17 @@
     "rawdatum":"25.06.-28.06."
   },
   {
+    "id":"kdt",
+    "name":"JazzAscona",
+    "ort":"Ascona",
+    "land":"ch",
+    "plz":"6612",
+    "startdatum":"2026-06-25",
+    "enddatum":"2026-07-04",
+    "slug":"jazzascona",
+    "rawdatum":"25.06.-04.07."
+  },
+  {
     "id":"TXB",
     "name":"R.O.I. Rock On Isens",
     "ort":"Butjadingen",
@@ -1672,6 +2266,17 @@
     "rawdatum":"25.06.-27.06."
   },
   {
+    "id":"tJt",
+    "name":"Wild & Free Spring Break Weekend 3",
+    "ort":"Novalja",
+    "land":"hr",
+    "plz":"53291",
+    "startdatum":"2026-06-25",
+    "enddatum":"2026-06-28",
+    "slug":"wild_und_free_weekend_3",
+    "rawdatum":"25.06.-28.06."
+  },
+  {
     "id":"tOr",
     "name":"Chiemsee Reggae Summer",
     "ort":"Übersee",
@@ -1681,6 +2286,17 @@
     "enddatum":"2026-06-28",
     "slug":"chiemsee_reggae_summer",
     "rawdatum":"26.06.-28.06."
+  },
+  {
+    "id":"zQh",
+    "name":"Impericon Festival",
+    "ort":"Leipzig",
+    "land":"de",
+    "plz":"04356",
+    "startdatum":"2026-06-26",
+    "enddatum":"2026-06-27",
+    "slug":"impericon_festival_leipzig",
+    "rawdatum":"26.06.-27.06."
   },
   {
     "id":"fAu",
@@ -1705,6 +2321,28 @@
     "rawdatum":"27.06.-04.07."
   },
   {
+    "id":"HlU",
+    "name":"Unterwelt Festival",
+    "ort":"München",
+    "land":"de",
+    "plz":"81373",
+    "startdatum":"2026-06-27",
+    "enddatum":"2026-06-27",
+    "slug":"unterwelt_festival",
+    "rawdatum":"27.06."
+  },
+  {
+    "id":"m_Z",
+    "name":"Obscene Extreme",
+    "ort":"Trutnov",
+    "land":"cz",
+    "plz":"54101",
+    "startdatum":"2026-07-01",
+    "enddatum":"2026-07-05",
+    "slug":"obscene_extreme",
+    "rawdatum":"01.07.-05.07."
+  },
+  {
     "id":"Fwn",
     "name":"Resurrection Fest",
     "ort":"Vivero",
@@ -1727,6 +2365,17 @@
     "rawdatum":"02.07.-04.07."
   },
   {
+    "id":"McR",
+    "name":"Ancient Echoes",
+    "ort":"Markkleeberg",
+    "land":"de",
+    "plz":"04416",
+    "startdatum":"2026-07-03",
+    "enddatum":"2026-07-04",
+    "slug":"ancient_echoes",
+    "rawdatum":"03.07.-04.07."
+  },
+  {
     "id":"dkN",
     "name":"Castle Rock",
     "ort":"Mülheim an der Ruhr",
@@ -1736,6 +2385,17 @@
     "enddatum":"2026-07-04",
     "slug":"castle_rock",
     "rawdatum":"03.07.-04.07."
+  },
+  {
+    "id":"y1X",
+    "name":"Donauinselfest",
+    "ort":"Wien",
+    "land":"at",
+    "plz":"1210",
+    "startdatum":"2026-07-03",
+    "enddatum":"2026-07-05",
+    "slug":"donauinselfest",
+    "rawdatum":"03.07.-05.07."
   },
   {
     "id":"5n_",
@@ -1757,6 +2417,17 @@
     "startdatum":"2026-07-03",
     "enddatum":"2026-07-04",
     "slug":"harrys_full_metal_party",
+    "rawdatum":"03.07.-04.07."
+  },
+  {
+    "id":"iSE",
+    "name":"Kein Bock auf Nazis Festival",
+    "ort":"Thallichtenberg",
+    "land":"de",
+    "plz":"66871",
+    "startdatum":"2026-07-03",
+    "enddatum":"2026-07-04",
+    "slug":"kein_bock_auf_nazis",
     "rawdatum":"03.07.-04.07."
   },
   {
@@ -1782,6 +2453,17 @@
     "rawdatum":"03.07.-05.07."
   },
   {
+    "id":"Nqs",
+    "name":"Wolfweez Openair Festival",
+    "ort":"Irslingen",
+    "land":"de",
+    "plz":"78661",
+    "startdatum":"2026-07-03",
+    "enddatum":"2026-07-04",
+    "slug":"wolfweez_openair_festival",
+    "rawdatum":"03.07.-04.07."
+  },
+  {
     "id":"Wma",
     "name":"Glowing Ember Festival",
     "ort":"Nürnberg",
@@ -1790,6 +2472,17 @@
     "startdatum":"2026-07-04",
     "enddatum":"2026-07-04",
     "slug":"glowing_ember_festival_bayern",
+    "rawdatum":"04.07."
+  },
+  {
+    "id":"SCt",
+    "name":"Spin Festival",
+    "ort":"Trier",
+    "land":"de",
+    "plz":"54294",
+    "startdatum":"2026-07-04",
+    "enddatum":"2026-07-04",
+    "slug":"spin_festival",
     "rawdatum":"04.07."
   },
   {
@@ -1815,6 +2508,61 @@
     "rawdatum":"08.07.-12.07."
   },
   {
+    "id":"4se",
+    "name":"Ankerberg Festival",
+    "ort":"Oberlungwitz",
+    "land":"de",
+    "plz":"09353",
+    "startdatum":"2026-07-08",
+    "enddatum":"2026-07-12",
+    "slug":"ankerberg_festival",
+    "rawdatum":"08.07.-12.07."
+  },
+  {
+    "id":"Aa2",
+    "name":"Love International",
+    "ort":"Tisno",
+    "land":"hr",
+    "plz":"22240",
+    "startdatum":"2026-07-08",
+    "enddatum":"2026-07-14",
+    "slug":"love_international",
+    "rawdatum":"08.07.-14.07."
+  },
+  {
+    "id":"uXD",
+    "name":"Pohoda Festival",
+    "ort":"Trencin",
+    "land":"sk",
+    "plz":"91104",
+    "startdatum":"2026-07-08",
+    "enddatum":"2026-07-11",
+    "slug":"pohoda_festival",
+    "rawdatum":"08.07.-11.07."
+  },
+  {
+    "id":"3YQ",
+    "name":"Bilbao BBK Live",
+    "ort":"Bilbao",
+    "land":"es",
+    "plz":"48011",
+    "startdatum":"2026-07-09",
+    "enddatum":"2026-07-11",
+    "slug":"bilbao_bbk_live",
+    "rawdatum":"09.07.-11.07."
+  },
+  {
+    "id":"J_9",
+    "name":"Field Invasion Festival",
+    "ort":"Urbach",
+    "land":"de",
+    "plz":"56317",
+    "startdatum":"2026-07-09",
+    "enddatum":"2026-07-11",
+    "slug":"field_invasion_festival",
+    "rawdatum":"09.07.-11.07."
+  },
+  {
     "id":"Upz",
     "name":"In Flammen Open Air",
     "ort":"Torgau",
@@ -1823,6 +2571,28 @@
     "startdatum":"2026-07-09",
     "enddatum":"2026-07-11",
     "slug":"in_flammen_open_air",
+    "rawdatum":"09.07.-11.07."
+  },
+  {
+    "id":"zpH",
+    "name":"Kosmos Festival",
+    "ort":"Närhilä",
+    "land":"fi",
+    "plz":"52510",
+    "startdatum":"2026-07-09",
+    "enddatum":"2026-07-12",
+    "slug":"kosmos_festival",
+    "rawdatum":"09.07.-12.07."
+  },
+  {
+    "id":"yYW",
+    "name":"NOS Alive",
+    "ort":"Lisabon",
+    "land":"pt",
+    "plz":"1495-001",
+    "startdatum":"2026-07-09",
+    "enddatum":"2026-07-11",
+    "slug":"optimus_alive",
     "rawdatum":"09.07.-11.07."
   },
   {
@@ -1848,6 +2618,72 @@
     "rawdatum":"09.07.-11.07."
   },
   {
+    "id":"zKe",
+    "name":"Slottsfjell",
+    "ort":"Tønsberg",
+    "land":"no",
+    "plz":"3111",
+    "startdatum":"2026-07-09",
+    "enddatum":"2026-07-10",
+    "slug":"slottsfjell",
+    "rawdatum":"09.07.-10.07."
+  },
+  {
+    "id":"Oy4",
+    "name":"Stoned from the Underground",
+    "ort":"Alperstedt",
+    "land":"de",
+    "plz":"99195",
+    "startdatum":"2026-07-09",
+    "enddatum":"2026-07-11",
+    "slug":"stoned_from_the_underground",
+    "rawdatum":"09.07.-11.07."
+  },
+  {
+    "id":"SS8",
+    "name":"Weekend Beach Festival",
+    "ort":"Torre del Mar",
+    "land":"es",
+    "plz":"29740",
+    "startdatum":"2026-07-09",
+    "enddatum":"2026-07-11",
+    "slug":"weekend_beach_festival",
+    "rawdatum":"09.07.-11.07."
+  },
+  {
+    "id":"a00",
+    "name":"Afrika Festival Stuttgart",
+    "ort":"Stuttgart",
+    "land":"de",
+    "plz":"70199",
+    "startdatum":"2026-07-10",
+    "enddatum":"2026-07-12",
+    "slug":"afrika_festival_stuttgart",
+    "rawdatum":"10.07.-12.07."
+  },
+  {
+    "id":"gam",
+    "name":"Dub Camp Festival",
+    "ort":"Joué-sur-Erdre",
+    "land":"fr",
+    "plz":"44440",
+    "startdatum":"2026-07-10",
+    "enddatum":"2026-07-12",
+    "slug":"dub_camp_festival",
+    "rawdatum":"10.07.-12.07."
+  },
+  {
+    "id":"7NY",
+    "name":"Honberg-Sommer",
+    "ort":"Tuttlingen",
+    "land":"de",
+    "plz":"78532",
+    "startdatum":"2026-07-10",
+    "enddatum":"2026-07-26",
+    "slug":"honberg_sommer",
+    "rawdatum":"10.07.-26.07."
+  },
+  {
     "id":"8tf",
     "name":"Klangfestival",
     "ort":"Gallneukirchen",
@@ -1856,6 +2692,28 @@
     "startdatum":"2026-07-10",
     "enddatum":"2026-07-12",
     "slug":"klangfestival",
+    "rawdatum":"10.07.-12.07."
+  },
+  {
+    "id":"g-M",
+    "name":"Krach am Bach Festival",
+    "ort":"Prölsdorf",
+    "land":"de",
+    "plz":"96181",
+    "startdatum":"2026-07-10",
+    "enddatum":"2026-07-11",
+    "slug":"krach_am_bach_proelsdorf",
+    "rawdatum":"10.07.-11.07."
+  },
+  {
+    "id":"2J4",
+    "name":"Lasemo Festival",
+    "ort":"Enghien",
+    "land":"be",
+    "plz":"7850",
+    "startdatum":"2026-07-10",
+    "enddatum":"2026-07-12",
+    "slug":"lasemo_festival",
     "rawdatum":"10.07.-12.07."
   },
   {
@@ -1870,6 +2728,17 @@
     "rawdatum":"10.07.-11.07."
   },
   {
+    "id":"w3M",
+    "name":"Nonstock Festival",
+    "ort":"Nonrod",
+    "land":"de",
+    "plz":"64405",
+    "startdatum":"2026-07-10",
+    "enddatum":"2026-07-11",
+    "slug":"nonstock",
+    "rawdatum":"10.07.-11.07."
+  },
+  {
     "id":"0TV",
     "name":"Open Air Hamm",
     "ort":"Hamm",
@@ -1881,6 +2750,39 @@
     "rawdatum":"10.07.-11.07."
   },
   {
+    "id":"BS6",
+    "name":"Pure Fucking Metal FestEvil",
+    "ort":"Laberweinting",
+    "land":"de",
+    "plz":"84082",
+    "startdatum":"2026-07-10",
+    "enddatum":"2026-07-11",
+    "slug":"pure_fucking_metal_festevil",
+    "rawdatum":"10.07.-11.07."
+  },
+  {
+    "id":"Clq",
+    "name":"Rock im Ring Festival",
+    "ort":"Klobenstein\/Ritten",
+    "land":"it",
+    "plz":"39054",
+    "startdatum":"2026-07-10",
+    "enddatum":"2026-07-11",
+    "slug":"rock_im_ring",
+    "rawdatum":"10.07.-11.07."
+  },
+  {
+    "id":"HsG",
+    "name":"Sjock Festival",
+    "ort":"Gierle",
+    "land":"be",
+    "plz":"2275",
+    "startdatum":"2026-07-10",
+    "enddatum":"2026-07-12",
+    "slug":"sjock_festival",
+    "rawdatum":"10.07.-12.07."
+  },
+  {
     "id":"YRE",
     "name":"Sommerland Festival",
     "ort":"Melle",
@@ -1890,6 +2792,105 @@
     "enddatum":"2026-07-12",
     "slug":"sommerland_festival",
     "rawdatum":"10.07.-12.07."
+  },
+  {
+    "id":"Kq5",
+    "name":"Stone Techno Festival",
+    "ort":"Essen",
+    "land":"de",
+    "plz":"45309",
+    "startdatum":"2026-07-10",
+    "enddatum":"2026-07-12",
+    "slug":"stone_techno_festival",
+    "rawdatum":"10.07.-12.07."
+  },
+  {
+    "id":"z_d",
+    "name":"Sunrise Reggae und Ska Festival",
+    "ort":"Burtenbach",
+    "land":"de",
+    "plz":"89349",
+    "startdatum":"2026-07-10",
+    "enddatum":"2026-07-12",
+    "slug":"sunrise_reggae_and_ska_festival",
+    "rawdatum":"10.07.-12.07."
+  },
+  {
+    "id":"RLw",
+    "name":"Tollrock Festival",
+    "ort":"Nideggen",
+    "land":"de",
+    "plz":"52385",
+    "startdatum":"2026-07-10",
+    "enddatum":"2026-07-11",
+    "slug":"tollrock_festival",
+    "rawdatum":"10.07.-11.07."
+  },
+  {
+    "id":"oBD",
+    "name":"Unifest Karlsruhe",
+    "ort":"Karlsruhe",
+    "land":"de",
+    "plz":"76131",
+    "startdatum":"2026-07-10",
+    "enddatum":"2026-07-11",
+    "slug":"usta_unifest",
+    "rawdatum":"10.07.-11.07."
+  },
+  {
+    "id":"S5c",
+    "name":"Wellenklaenge",
+    "ort":"Lunz am See",
+    "land":"at",
+    "plz":"3293",
+    "startdatum":"2026-07-10",
+    "enddatum":"2026-07-25",
+    "slug":"wellenklaenge",
+    "rawdatum":"10.07.-25.07."
+  },
+  {
+    "id":"TyN",
+    "name":"Wipfelbeben",
+    "ort":"Delligsen",
+    "land":"de",
+    "plz":"30173",
+    "startdatum":"2026-07-10",
+    "enddatum":"2026-07-12",
+    "slug":"wipfelbeben",
+    "rawdatum":"10.07.-12.07."
+  },
+  {
+    "id":"ulM",
+    "name":"Beat Club Festival Greven",
+    "ort":"Greven",
+    "land":"de",
+    "plz":"48268",
+    "startdatum":"2026-07-11",
+    "enddatum":"2026-07-11",
+    "slug":"beat_club_festival",
+    "rawdatum":"11.07."
+  },
+  {
+    "id":"5b2",
+    "name":"Forestglade",
+    "ort":"Eisenstadt",
+    "land":"at",
+    "plz":"7000",
+    "startdatum":"2026-07-11",
+    "enddatum":"2026-07-11",
+    "slug":"forestglade",
+    "rawdatum":"11.07."
+  },
+  {
+    "id":"8G0",
+    "name":"Open Park Pfa'Hofa",
+    "ort":"Pfaffenhofen an der Ilm",
+    "land":"de",
+    "plz":"85276",
+    "startdatum":"2026-07-11",
+    "enddatum":"2026-07-12",
+    "slug":"open_park_pfa_hofa",
+    "rawdatum":"11.07.-12.07."
   },
   {
     "id":"llx",
@@ -1914,6 +2915,17 @@
     "rawdatum":"15.07.-22.07."
   },
   {
+    "id":"WGe",
+    "name":"Area 53 Festival",
+    "ort":"Leoben",
+    "land":"at",
+    "plz":"8700",
+    "startdatum":"2026-07-16",
+    "enddatum":"2026-07-18",
+    "slug":"area_53_festival",
+    "rawdatum":"16.07.-18.07."
+  },
+  {
     "id":"aed",
     "name":"Back To Future",
     "ort":"Glaubitz",
@@ -1923,6 +2935,28 @@
     "enddatum":"2026-07-18",
     "slug":"back_to_future",
     "rawdatum":"16.07.-18.07."
+  },
+  {
+    "id":"cvh",
+    "name":"Castle Party Festival",
+    "ort":"Bolków",
+    "land":"pl",
+    "plz":"59-420",
+    "startdatum":"2026-07-16",
+    "enddatum":"2026-07-19",
+    "slug":"castle_party_festival",
+    "rawdatum":"16.07.-19.07."
+  },
+  {
+    "id":"4sO",
+    "name":"Masters of Rock",
+    "ort":"Vizovice",
+    "land":"cz",
+    "plz":"76312",
+    "startdatum":"2026-07-16",
+    "enddatum":"2026-07-19",
+    "slug":"masters_of_rock",
+    "rawdatum":"16.07.-19.07."
   },
   {
     "id":"WbH",
@@ -1947,6 +2981,28 @@
     "rawdatum":"16.07.-19.07."
   },
   {
+    "id":"gJN",
+    "name":"Shelter Festival",
+    "ort":"Eggebek",
+    "land":"de",
+    "plz":"24852",
+    "startdatum":"2026-07-16",
+    "enddatum":"2026-07-18",
+    "slug":"shelter_festival",
+    "rawdatum":"16.07.-18.07."
+  },
+  {
+    "id":"aCJ",
+    "name":"Baden in Blut",
+    "ort":"Weil am Rhein",
+    "land":"de",
+    "plz":"79576",
+    "startdatum":"2026-07-17",
+    "enddatum":"2026-07-18",
+    "slug":"baden_in_blut",
+    "rawdatum":"17.07.-18.07."
+  },
+  {
     "id":"ygg",
     "name":"Blasius",
     "ort":"Fremdingen",
@@ -1955,6 +3011,17 @@
     "startdatum":"2026-07-17",
     "enddatum":"2026-07-19",
     "slug":"blasius",
+    "rawdatum":"17.07.-19.07."
+  },
+  {
+    "id":"dUy",
+    "name":"Doune The Rabbit Hole Festival",
+    "ort":"Port of Menteith",
+    "land":"gb",
+    "plz":"FK8 3JY",
+    "startdatum":"2026-07-17",
+    "enddatum":"2026-07-19",
+    "slug":"doune_the_rabbit_hole_festival",
     "rawdatum":"17.07.-19.07."
   },
   {
@@ -2000,6 +3067,28 @@
     "enddatum":"2026-07-18",
     "slug":"rock_unter_den_eichen",
     "rawdatum":"17.07.-18.07."
+  },
+  {
+    "id":"15H",
+    "name":"Seepogo Festival",
+    "ort":"Münster (Selters)",
+    "land":"de",
+    "plz":"65618",
+    "startdatum":"2026-07-17",
+    "enddatum":"2026-07-18",
+    "slug":"seepogo",
+    "rawdatum":"17.07.-18.07."
+  },
+  {
+    "id":"7oj",
+    "name":"Castellans Folk Sommer",
+    "ort":"Hörstel",
+    "land":"de",
+    "plz":"48477",
+    "startdatum":"2026-07-18",
+    "enddatum":"2026-07-18",
+    "slug":"castellans_folk_sommer",
+    "rawdatum":"18.07."
   },
   {
     "id":"Hd3",
@@ -2057,6 +3146,17 @@
     "rawdatum":"24.07.-25.07."
   },
   {
+    "id":"QVF",
+    "name":"Landed Festival",
+    "ort":"Llandrindod Wells",
+    "land":"wa",
+    "plz":"LD1 6HH",
+    "startdatum":"2026-07-24",
+    "enddatum":"2026-07-27",
+    "slug":"landed_festival",
+    "rawdatum":"24.07.-27.07."
+  },
+  {
     "id":"pBv",
     "name":"O.Z.O.R.A. Festival",
     "ort":"Ozora",
@@ -2112,6 +3212,17 @@
     "rawdatum":"25.07.-26.07."
   },
   {
+    "id":"dpY",
+    "name":"Heldenfest",
+    "ort":"Wuppertal",
+    "land":"de",
+    "plz":"42107",
+    "startdatum":"2026-07-25",
+    "enddatum":"2026-07-25",
+    "slug":"heldenfest",
+    "rawdatum":"25.07."
+  },
+  {
     "id":"1R_",
     "name":"Mittelalterlich Phantasie Spectaculum",
     "ort":"Bückeburg",
@@ -2121,6 +3232,17 @@
     "enddatum":"2026-07-26",
     "slug":"mittelalterlich_phantasie_spectaculum_bueckeburg",
     "rawdatum":"25.07.-26.07."
+  },
+  {
+    "id":"S9B",
+    "name":"Strandgut Electro-Festival",
+    "ort":"Eckernförde",
+    "land":"de",
+    "plz":"24340",
+    "startdatum":"2026-07-25",
+    "enddatum":"2026-07-25",
+    "slug":"strandgut_festival",
+    "rawdatum":"25.07."
   },
   {
     "id":"dU3",
@@ -2211,6 +3333,17 @@
     "rawdatum":"30.07.-02.08."
   },
   {
+    "id":"ZZE",
+    "name":"Rock dein Leben Festival",
+    "ort":"Laichingen",
+    "land":"de",
+    "plz":"89150",
+    "startdatum":"2026-07-30",
+    "enddatum":"2026-08-02",
+    "slug":"rock_dein_leben_festival",
+    "rawdatum":"30.07.-02.08."
+  },
+  {
     "id":"3dx",
     "name":"Rock Im Wald",
     "ort":"Neuensee",
@@ -2266,6 +3399,182 @@
     "rawdatum":"31.07.-01.08."
   },
   {
+    "id":"fMr",
+    "name":"Festival Interceltique",
+    "ort":"Lorient",
+    "land":"fr",
+    "plz":"56100",
+    "startdatum":"2026-07-31",
+    "enddatum":"2026-08-09",
+    "slug":"festival_interceltique",
+    "rawdatum":"31.07.-09.08."
+  },
+  {
+    "id":"vDk",
+    "name":"Festival L*abore",
+    "ort":"Hauptmannsgrün",
+    "land":"de",
+    "plz":"08468",
+    "startdatum":"2026-07-31",
+    "enddatum":"2026-08-02",
+    "slug":"festival_l_abore",
+    "rawdatum":"31.07.-02.08."
+  },
+  {
+    "id":"KEi",
+    "name":"Festival Maritim",
+    "ort":"Bremen",
+    "land":"de",
+    "plz":"28757",
+    "startdatum":"2026-07-31",
+    "enddatum":"2026-08-02",
+    "slug":"festival_maritim",
+    "rawdatum":"31.07.-02.08."
+  },
+  {
+    "id":"qe0",
+    "name":"Folk am Neckar",
+    "ort":"Mosbach",
+    "land":"de",
+    "plz":"74821",
+    "startdatum":"2026-07-31",
+    "enddatum":"2026-08-01",
+    "slug":"folk_am_neckar",
+    "rawdatum":"31.07.-01.08."
+  },
+  {
+    "id":"cQ7",
+    "name":"Fährmannsfest",
+    "ort":"Hannover",
+    "land":"de",
+    "plz":"30167",
+    "startdatum":"2026-07-31",
+    "enddatum":"2026-08-02",
+    "slug":"faehrmannsfest",
+    "rawdatum":"31.07.-02.08."
+  },
+  {
+    "id":"5ba",
+    "name":"Green Juice Festival",
+    "ort":"Bonn",
+    "land":"de",
+    "plz":"53229",
+    "startdatum":"2026-07-31",
+    "enddatum":"2026-08-01",
+    "slug":"green_juice_festival",
+    "rawdatum":"31.07.-01.08."
+  },
+  {
+    "id":"qgm",
+    "name":"Gut Sandbeck Open Air",
+    "ort":"Osterholz-Scharmbeck",
+    "land":"de",
+    "plz":"27711",
+    "startdatum":"2026-07-31",
+    "enddatum":"2026-08-01",
+    "slug":"gut_sandbeck_open_air",
+    "rawdatum":"31.07.-01.08."
+  },
+  {
+    "id":"bbv",
+    "name":"Jailhouse Rock Festival",
+    "ort":"Rosport",
+    "land":"lu",
+    "plz":"6583",
+    "startdatum":"2026-07-31",
+    "enddatum":"2026-08-01",
+    "slug":"jailhouse_rock_festival",
+    "rawdatum":"31.07.-01.08."
+  },
+  {
+    "id":"bWL",
+    "name":"KP-One Festival",
+    "ort":"Wolfsburg",
+    "land":"de",
+    "plz":"38446",
+    "startdatum":"2026-07-31",
+    "enddatum":"2026-08-02",
+    "slug":"kp_one_festival",
+    "rawdatum":"31.07.-02.08."
+  },
+  {
+    "id":"TF8",
+    "name":"Krach am Bach",
+    "ort":"Beelen",
+    "land":"de",
+    "plz":"48361",
+    "startdatum":"2026-07-31",
+    "enddatum":"2026-08-01",
+    "slug":"krach_am_bach_beelen",
+    "rawdatum":"31.07.-01.08."
+  },
+  {
+    "id":"fsR",
+    "name":"Lokerse Feesten",
+    "ort":"Lokeren",
+    "land":"be",
+    "plz":"9160",
+    "startdatum":"2026-07-31",
+    "enddatum":"2026-08-09",
+    "slug":"lokerse_feesten",
+    "rawdatum":"31.07.-09.08."
+  },
+  {
+    "id":"BKV",
+    "name":"Lott Festival",
+    "ort":"Raversbeuren",
+    "land":"de",
+    "plz":"56850",
+    "startdatum":"2026-07-31",
+    "enddatum":"2026-08-02",
+    "slug":"lott_festival",
+    "rawdatum":"31.07.-02.08."
+  },
+  {
+    "id":"LPR",
+    "name":"Open Air Gränichen",
+    "ort":"Gränichen",
+    "land":"ch",
+    "plz":"5722",
+    "startdatum":"2026-07-31",
+    "enddatum":"2026-08-01",
+    "slug":"open_air_graenichen",
+    "rawdatum":"31.07.-01.08."
+  },
+  {
+    "id":"YWV",
+    "name":"Open Air Gößnitz",
+    "ort":"Gößnitz",
+    "land":"de",
+    "plz":"04639",
+    "startdatum":"2026-07-31",
+    "enddatum":"2026-08-02",
+    "slug":"open_air_goessnitz",
+    "rawdatum":"31.07.-02.08."
+  },
+  {
+    "id":"CK1",
+    "name":"Parklichter",
+    "ort":"Bad Oeynhausen",
+    "land":"de",
+    "plz":"32545",
+    "startdatum":"2026-07-31",
+    "enddatum":"2026-08-02",
+    "slug":"parklichter",
+    "rawdatum":"31.07.-02.08."
+  },
+  {
+    "id":"pjy",
+    "name":"RockXplosion - Warmbronner Open Air",
+    "ort":"Warmbronn",
+    "land":"de",
+    "plz":"71229",
+    "startdatum":"2026-07-31",
+    "enddatum":"2026-08-02",
+    "slug":"warmbronner_open_air",
+    "rawdatum":"31.07.-02.08."
+  },
+  {
     "id":"lNs",
     "name":"Sticky Fingers Festival",
     "ort":"Brand",
@@ -2275,6 +3584,17 @@
     "enddatum":"2026-08-01",
     "slug":"sticky_fingers_festival",
     "rawdatum":"31.07.-01.08."
+  },
+  {
+    "id":"u_y",
+    "name":"Sunrise Festival",
+    "ort":"Kolobrzeg",
+    "land":"pl",
+    "plz":"78-100",
+    "startdatum":"2026-07-31",
+    "enddatum":"2026-08-02",
+    "slug":"sunrise_festival",
+    "rawdatum":"31.07.-02.08."
   },
   {
     "id":"bHe",
@@ -2299,6 +3619,17 @@
     "rawdatum":"03.08.-09.08."
   },
   {
+    "id":"Ypq",
+    "name":"Brutal Assault Festival",
+    "ort":"Jaromer",
+    "land":"cz",
+    "plz":"55102",
+    "startdatum":"2026-08-05",
+    "enddatum":"2026-08-08",
+    "slug":"brutal_assault",
+    "rawdatum":"05.08.-08.08."
+  },
+  {
     "id":"2mR",
     "name":"Open Flair Festival",
     "ort":"Eschwege",
@@ -2308,6 +3639,72 @@
     "enddatum":"2026-08-09",
     "slug":"open_flair",
     "rawdatum":"05.08.-09.08."
+  },
+  {
+    "id":"vh-",
+    "name":"About You Pangea Festival",
+    "ort":"Ribnitz-Damgarten",
+    "land":"de",
+    "plz":"18311",
+    "startdatum":"2026-08-06",
+    "enddatum":"2026-08-08",
+    "slug":"pangea_festival",
+    "rawdatum":"06.08.-08.08."
+  },
+  {
+    "id":"Ljq",
+    "name":"Alcatraz Festival",
+    "ort":"Kortrijk",
+    "land":"be",
+    "plz":"8500",
+    "startdatum":"2026-08-06",
+    "enddatum":"2026-08-09",
+    "slug":"alcatraz_festival",
+    "rawdatum":"06.08.-09.08."
+  },
+  {
+    "id":"YQq",
+    "name":"Bloodstock Open Air",
+    "ort":"Walton On Trent",
+    "land":"uk",
+    "plz":"DE12 8LN",
+    "startdatum":"2026-08-06",
+    "enddatum":"2026-08-09",
+    "slug":"bloodstock_open_air",
+    "rawdatum":"06.08.-09.08."
+  },
+  {
+    "id":"YCn",
+    "name":"Buskers Bern",
+    "ort":"Bern",
+    "land":"ch",
+    "plz":"3011",
+    "startdatum":"2026-08-06",
+    "enddatum":"2026-08-08",
+    "slug":"buskers_bern",
+    "rawdatum":"06.08.-08.08."
+  },
+  {
+    "id":"5Pa",
+    "name":"Hütte Rockt Festival",
+    "ort":"Georgsmarienhütte",
+    "land":"de",
+    "plz":"49124",
+    "startdatum":"2026-08-06",
+    "enddatum":"2026-08-08",
+    "slug":"die_huette_rockt",
+    "rawdatum":"06.08.-08.08."
+  },
+  {
+    "id":"lJZ",
+    "name":"Party.San Metal Open Air",
+    "ort":"Schlotheim",
+    "land":"de",
+    "plz":"99994",
+    "startdatum":"2026-08-06",
+    "enddatum":"2026-08-08",
+    "slug":"partysan_open_air",
+    "rawdatum":"06.08.-08.08."
   },
   {
     "id":"d56",
@@ -2332,6 +3729,28 @@
     "rawdatum":"06.08.-09.08."
   },
   {
+    "id":"u5H",
+    "name":"Circle of Leaves",
+    "ort":"Oberzent",
+    "land":"de",
+    "plz":"64760",
+    "startdatum":"2026-08-07",
+    "enddatum":"2026-08-09",
+    "slug":"circle_of_leaves",
+    "rawdatum":"07.08.-09.08."
+  },
+  {
+    "id":"ycV",
+    "name":"CoSy Festival",
+    "ort":"Gommern",
+    "land":"de",
+    "plz":"39264",
+    "startdatum":"2026-08-07",
+    "enddatum":"2026-08-10",
+    "slug":"cosy_festival",
+    "rawdatum":"07.08.-10.08."
+  },
+  {
     "id":"6Np",
     "name":"Enzo Festival",
     "ort":"Wagersrott",
@@ -2354,6 +3773,17 @@
     "rawdatum":"07.08.-08.08."
   },
   {
+    "id":"yCk",
+    "name":"Galgenberg Festival",
+    "ort":"Aalen",
+    "land":"de",
+    "plz":"73430",
+    "startdatum":"2026-08-07",
+    "enddatum":"2026-08-08",
+    "slug":"galgenberg_festival",
+    "rawdatum":"07.08.-08.08."
+  },
+  {
     "id":"S31",
     "name":"Heitere Open Air",
     "ort":"Zofingen",
@@ -2363,6 +3793,39 @@
     "enddatum":"2026-08-09",
     "slug":"heitere_open_air",
     "rawdatum":"07.08.-09.08."
+  },
+  {
+    "id":"vw3",
+    "name":"Jenseits von Millionen",
+    "ort":"Friedland",
+    "land":"de",
+    "plz":"15848",
+    "startdatum":"2026-08-07",
+    "enddatum":"2026-08-08",
+    "slug":"jenseits_von_millionen",
+    "rawdatum":"07.08.-08.08."
+  },
+  {
+    "id":"daM",
+    "name":"Kozfest",
+    "ort":"Builth Wells",
+    "land":"ie",
+    "plz":"LD2 3RD",
+    "startdatum":"2026-08-07",
+    "enddatum":"2026-08-09",
+    "slug":"kozfest",
+    "rawdatum":"07.08.-09.08."
+  },
+  {
+    "id":"wv3",
+    "name":"Meti Festival",
+    "ort":"Düsseldorf",
+    "land":"de",
+    "plz":"40468",
+    "startdatum":"2026-08-07",
+    "enddatum":"2026-08-08",
+    "slug":"meti_festival",
+    "rawdatum":"07.08.-08.08."
   },
   {
     "id":"KQn",
@@ -2376,6 +3839,50 @@
     "rawdatum":"07.08.-08.08."
   },
   {
+    "id":"t_d",
+    "name":"Rock am Friedensdenkmal",
+    "ort":"Edenkoben",
+    "land":"de",
+    "plz":"67480",
+    "startdatum":"2026-08-07",
+    "enddatum":"2026-08-08",
+    "slug":"rock_am_friedensdenkmal",
+    "rawdatum":"07.08.-08.08."
+  },
+  {
+    "id":"gLV",
+    "name":"Rock am Köterberg",
+    "ort":"Niese",
+    "land":"de",
+    "plz":"32676",
+    "startdatum":"2026-08-07",
+    "enddatum":"2026-08-08",
+    "slug":"rock_am_koeterberg",
+    "rawdatum":"07.08.-08.08."
+  },
+  {
+    "id":"_tO",
+    "name":"Rock im Moor",
+    "ort":"Boberow",
+    "land":"de",
+    "plz":"19357",
+    "startdatum":"2026-08-07",
+    "enddatum":"2026-08-08",
+    "slug":"rock_im_moor",
+    "rawdatum":"07.08.-08.08."
+  },
+  {
+    "id":"SK9",
+    "name":"SichtFeld Openair",
+    "ort":"Gipf-Oberfrick",
+    "land":"ch",
+    "plz":"5073",
+    "startdatum":"2026-08-07",
+    "enddatum":"2026-08-09",
+    "slug":"sicht_feld_openair",
+    "rawdatum":"07.08.-09.08."
+  },
+  {
     "id":"LOS",
     "name":"SonneMondSterne",
     "ort":"Saalburg-Ebersdorf",
@@ -2384,6 +3891,39 @@
     "startdatum":"2026-08-07",
     "enddatum":"2026-08-09",
     "slug":"sonne_mond_sterne",
+    "rawdatum":"07.08.-09.08."
+  },
+  {
+    "id":"mpg",
+    "name":"Suikerrock",
+    "ort":"Tienen",
+    "land":"be",
+    "plz":"3300",
+    "startdatum":"2026-08-07",
+    "enddatum":"2026-08-09",
+    "slug":"suikerrock",
+    "rawdatum":"07.08.-09.08."
+  },
+  {
+    "id":"qp6",
+    "name":"Umsonst & Draußen Stuttgart",
+    "ort":"Stuttgart",
+    "land":"de",
+    "plz":"70563",
+    "startdatum":"2026-08-07",
+    "enddatum":"2026-08-09",
+    "slug":"umsonst_und_draussen_stuttgart",
+    "rawdatum":"07.08.-09.08."
+  },
+  {
+    "id":"XBk",
+    "name":"Wutzrock",
+    "ort":"Hamburg",
+    "land":"de",
+    "plz":"21037",
+    "startdatum":"2026-08-07",
+    "enddatum":"2026-08-09",
+    "slug":"wutzrock",
     "rawdatum":"07.08.-09.08."
   },
   {
@@ -2396,6 +3936,72 @@
     "enddatum":"2026-08-08",
     "slug":"wellesweiler_open_air",
     "rawdatum":"07.08.-08.08."
+  },
+  {
+    "id":"-Lv",
+    "name":"Blijdorp Festival",
+    "ort":"Rotterdam",
+    "land":"nl",
+    "plz":"3041 JK",
+    "startdatum":"2026-08-08",
+    "enddatum":"2026-08-08",
+    "slug":"blijdorp_festival",
+    "rawdatum":"08.08."
+  },
+  {
+    "id":"aww",
+    "name":"Elbriot Festival",
+    "ort":"Hamburg",
+    "land":"de",
+    "plz":"20097",
+    "startdatum":"2026-08-08",
+    "enddatum":"2026-08-08",
+    "slug":"elbriot_festival",
+    "rawdatum":"08.08."
+  },
+  {
+    "id":"TgW",
+    "name":"Heidebeat Festival",
+    "ort":"Schmelz",
+    "land":"de",
+    "plz":"66839",
+    "startdatum":"2026-08-08",
+    "enddatum":"2026-08-08",
+    "slug":"heidebeat_festival",
+    "rawdatum":"08.08."
+  },
+  {
+    "id":"X5w",
+    "name":"Holi Festival Of Colours - Farbgefühle",
+    "ort":"Leverkusen",
+    "land":"de",
+    "plz":"51373",
+    "startdatum":"2026-08-08",
+    "enddatum":"2026-08-08",
+    "slug":"holi_festival_of_colours_leverkusen",
+    "rawdatum":"08.08."
+  },
+  {
+    "id":"BMB",
+    "name":"Keep It True Legions",
+    "ort":"Geiselwind",
+    "land":"de",
+    "plz":"96160",
+    "startdatum":"2026-08-08",
+    "enddatum":"2026-08-09",
+    "slug":"keep_it_true_legions",
+    "rawdatum":"08.08.-09.08."
+  },
+  {
+    "id":"yx_",
+    "name":"Mega Malle - Das Mallorca-Parkfestival",
+    "ort":"Magdeburg",
+    "land":"de",
+    "plz":"39114",
+    "startdatum":"2026-08-08",
+    "enddatum":"2026-08-08",
+    "slug":"malle_mega_das_mallorca_parkfestival",
+    "rawdatum":"08.08."
   },
   {
     "id":"UkM",
@@ -2453,6 +4059,72 @@
     "rawdatum":"13.08.-15.08."
   },
   {
+    "id":"qBr",
+    "name":"Altburgfestival",
+    "ort":"Bundenbach",
+    "land":"de",
+    "plz":"55626",
+    "startdatum":"2026-08-14",
+    "enddatum":"2026-08-16",
+    "slug":"altburgfestival_bundenbach",
+    "rawdatum":"14.08.-16.08."
+  },
+  {
+    "id":"qPh",
+    "name":"Angeliter Open Air",
+    "ort":"Taarstedt",
+    "land":"de",
+    "plz":"24893",
+    "startdatum":"2026-08-14",
+    "enddatum":"2026-08-15",
+    "slug":"angeliter_open_air",
+    "rawdatum":"14.08.-15.08."
+  },
+  {
+    "id":"5cY",
+    "name":"Beer'N'Breakdown",
+    "ort":"Bad Freienwalde",
+    "land":"de",
+    "plz":"16259",
+    "startdatum":"2026-08-14",
+    "enddatum":"2026-08-16",
+    "slug":"beer_n_breakdown",
+    "rawdatum":"14.08.-16.08."
+  },
+  {
+    "id":"2fG",
+    "name":"Em Bebbi sy Jazz",
+    "ort":"Basel",
+    "land":"ch",
+    "plz":"4058",
+    "startdatum":"2026-08-14",
+    "enddatum":"2026-08-14",
+    "slug":"em_bebbi_sy_jazz",
+    "rawdatum":"14.08."
+  },
+  {
+    "id":"gen",
+    "name":"European Elvis Festival",
+    "ort":"Bad Nauheim",
+    "land":"de",
+    "plz":"61231",
+    "startdatum":"2026-08-14",
+    "enddatum":"2026-08-16",
+    "slug":"european_elvis_festival",
+    "rawdatum":"14.08.-16.08."
+  },
+  {
+    "id":"6bI",
+    "name":"Grossbahrener Schwermetal Fest",
+    "ort":"Sonnewalde",
+    "land":"de",
+    "plz":"03249",
+    "startdatum":"2026-08-14",
+    "enddatum":"2026-08-16",
+    "slug":"grossbahrener_schwermetal_fest",
+    "rawdatum":"14.08.-16.08."
+  },
+  {
     "id":"Q5h",
     "name":"Highfield Festival",
     "ort":"Großpösna",
@@ -2464,6 +4136,28 @@
     "rawdatum":"14.08.-16.08."
   },
   {
+    "id":"p33",
+    "name":"Karben Open Air",
+    "ort":"Karben",
+    "land":"de",
+    "plz":"61184",
+    "startdatum":"2026-08-14",
+    "enddatum":"2026-08-16",
+    "slug":"endless_summer_open_air",
+    "rawdatum":"14.08.-16.08."
+  },
+  {
+    "id":"vfM",
+    "name":"Maschinensturm Festival",
+    "ort":"Demnitz",
+    "land":"de",
+    "plz":"15518",
+    "startdatum":"2026-08-14",
+    "enddatum":"2026-08-15",
+    "slug":"maschinensturm",
+    "rawdatum":"14.08.-15.08."
+  },
+  {
     "id":"bD5",
     "name":"Mittelalterlich Phantasie Spectaculum",
     "ort":"Weil am Rhein",
@@ -2472,6 +4166,28 @@
     "startdatum":"2026-08-14",
     "enddatum":"2026-08-16",
     "slug":"mittelalterlich_phantasie_spectaculum_weil",
+    "rawdatum":"14.08.-16.08."
+  },
+  {
+    "id":"ydO",
+    "name":"MS Dockville",
+    "ort":"Hamburg",
+    "land":"de",
+    "plz":"21107",
+    "startdatum":"2026-08-14",
+    "enddatum":"2026-08-15",
+    "slug":"dockville",
+    "rawdatum":"14.08.-15.08."
+  },
+  {
+    "id":"5TZ",
+    "name":"Musik & Stille Festival",
+    "ort":"Ueckermünde",
+    "land":"de",
+    "plz":"17373",
+    "startdatum":"2026-08-14",
+    "enddatum":"2026-08-16",
+    "slug":"musik_und_stille",
     "rawdatum":"14.08.-16.08."
   },
   {
@@ -2486,6 +4202,17 @@
     "rawdatum":"14.08.-15.08."
   },
   {
+    "id":"Rik",
+    "name":"Stemweder Open Air Festival",
+    "ort":"Stemwede",
+    "land":"de",
+    "plz":"32351",
+    "startdatum":"2026-08-14",
+    "enddatum":"2026-08-15",
+    "slug":"stemweder_open_air_festival",
+    "rawdatum":"14.08.-15.08."
+  },
+  {
     "id":"XX2",
     "name":"Tells Bells Festival",
     "ort":"Villmar",
@@ -2494,6 +4221,17 @@
     "startdatum":"2026-08-14",
     "enddatum":"2026-08-15",
     "slug":"tells_bells_festival",
+    "rawdatum":"14.08.-15.08."
+  },
+  {
+    "id":"Fbb",
+    "name":"Turnpike Reggae Festival",
+    "ort":"Herzebrock-Clarholz",
+    "land":"de",
+    "plz":"33442",
+    "startdatum":"2026-08-14",
+    "enddatum":"2026-08-15",
+    "slug":"turnpike_reggae_festival",
     "rawdatum":"14.08.-15.08."
   },
   {
@@ -2506,6 +4244,28 @@
     "enddatum":"2026-08-15",
     "slug":"electric_horizon",
     "rawdatum":"15.08."
+  },
+  {
+    "id":"0bT",
+    "name":"Holi Festival Of Colours - Farbgefühle",
+    "ort":"Dortmund",
+    "land":"de",
+    "plz":"44143",
+    "startdatum":"2026-08-15",
+    "enddatum":"2026-08-15",
+    "slug":"holi_festival_of_colours_dortmund",
+    "rawdatum":"15.08."
+  },
+  {
+    "id":"mJ4",
+    "name":"Rototom Sunsplash",
+    "ort":"Benicàssim",
+    "land":"es",
+    "plz":"12560",
+    "startdatum":"2026-08-17",
+    "enddatum":"2026-08-22",
+    "slug":"rototom_sunsplash",
+    "rawdatum":"17.08.-22.08."
   },
   {
     "id":"U_F",
@@ -2530,6 +4290,50 @@
     "rawdatum":"20.08.-23.08."
   },
   {
+    "id":"svZ",
+    "name":"Moyn Festival",
+    "ort":"Oyten",
+    "land":"de",
+    "plz":"28876",
+    "startdatum":"2026-08-20",
+    "enddatum":"2026-08-23",
+    "slug":"moyn_moyn_festival",
+    "rawdatum":"20.08.-23.08."
+  },
+  {
+    "id":"fiI",
+    "name":"Spirit From The Street Festival",
+    "ort":"Loburg",
+    "land":"de",
+    "plz":"39279",
+    "startdatum":"2026-08-20",
+    "enddatum":"2026-08-22",
+    "slug":"spirit_festival",
+    "rawdatum":"20.08.-22.08."
+  },
+  {
+    "id":"pev",
+    "name":"Stella Nomine Festival",
+    "ort":"Torgau",
+    "land":"de",
+    "plz":"04860",
+    "startdatum":"2026-08-20",
+    "enddatum":"2026-08-22",
+    "slug":"stella_nomine_festival_the_blackest_one",
+    "rawdatum":"20.08.-22.08."
+  },
+  {
+    "id":"vdl",
+    "name":"3 Wishes Faery Fest",
+    "ort":"Godney",
+    "land":"uk",
+    "plz":"BA5 1RX",
+    "startdatum":"2026-08-21",
+    "enddatum":"2026-08-23",
+    "slug":"3_wishes_faery_fest",
+    "rawdatum":"21.08.-23.08."
+  },
+  {
     "id":"1nT",
     "name":"A New Day Festival",
     "ort":"Hernhill",
@@ -2538,6 +4342,28 @@
     "startdatum":"2026-08-21",
     "enddatum":"2026-08-23",
     "slug":"a_new_day_festival",
+    "rawdatum":"21.08.-23.08."
+  },
+  {
+    "id":"Ngh",
+    "name":"Jazz & Joy",
+    "ort":"Worms",
+    "land":"de",
+    "plz":"67547",
+    "startdatum":"2026-08-21",
+    "enddatum":"2026-08-23",
+    "slug":"jazz_and_joy",
+    "rawdatum":"21.08.-23.08."
+  },
+  {
+    "id":"mYd",
+    "name":"Rewind Festival",
+    "ort":"Henley-on-Thames",
+    "land":"uk",
+    "plz":"RG9 3DD",
+    "startdatum":"2026-08-21",
+    "enddatum":"2026-08-23",
+    "slug":"rewind_festival",
     "rawdatum":"21.08.-23.08."
   },
   {
@@ -2563,6 +4389,28 @@
     "rawdatum":"21.08.-23.08."
   },
   {
+    "id":"_9B",
+    "name":"Zukunftsmusik Open Air",
+    "ort":"Ecklak",
+    "land":"de",
+    "plz":"25572",
+    "startdatum":"2026-08-21",
+    "enddatum":"2026-08-23",
+    "slug":"zukunftsmusik_open_air",
+    "rawdatum":"21.08.-23.08."
+  },
+  {
+    "id":"jY_",
+    "name":"HeimatGenuss",
+    "ort":"Rotenburg (Wümme)",
+    "land":"de",
+    "plz":"27356",
+    "startdatum":"2026-08-22",
+    "enddatum":"2026-08-23",
+    "slug":"heimatgenuss",
+    "rawdatum":"22.08.-23.08."
+  },
+  {
     "id":"_uz",
     "name":"Mittelalterlich Phantasie Spectaculum",
     "ort":"Speyer",
@@ -2572,6 +4420,39 @@
     "enddatum":"2026-08-23",
     "slug":"mittelalterlich_phantasie_spectaculum_speyer",
     "rawdatum":"22.08.-23.08."
+  },
+  {
+    "id":"SbC",
+    "name":"Mühlen Rockfestival",
+    "ort":"Diemelstadt",
+    "land":"de",
+    "plz":"34474",
+    "startdatum":"2026-08-22",
+    "enddatum":"2026-08-22",
+    "slug":"muehlen_rockfestival",
+    "rawdatum":"22.08."
+  },
+  {
+    "id":"-pd",
+    "name":"Summer Peak Festival",
+    "ort":"Novalja",
+    "land":"hr",
+    "plz":"53291",
+    "startdatum":"2026-08-22",
+    "enddatum":"2026-08-27",
+    "slug":"summer_peak",
+    "rawdatum":"22.08.-27.08."
+  },
+  {
+    "id":"vpc",
+    "name":"Free Earth Festival",
+    "ort":"Asprovalta",
+    "land":"gr",
+    "plz":"57021",
+    "startdatum":"2026-08-24",
+    "enddatum":"2026-08-30",
+    "slug":"free_earth_festival",
+    "rawdatum":"24.08.-30.08."
   },
   {
     "id":"yYy",
@@ -2596,6 +4477,17 @@
     "rawdatum":"26.08.-30.08."
   },
   {
+    "id":"TsW",
+    "name":"Forest Metal Festival",
+    "ort":"Bad Wörishofen",
+    "land":"de",
+    "plz":"86825",
+    "startdatum":"2026-08-27",
+    "enddatum":"2026-08-29",
+    "slug":"forest_metal_festival",
+    "rawdatum":"27.08.-29.08."
+  },
+  {
     "id":"sAe",
     "name":"Leedsfestival",
     "ort":"Bramham",
@@ -2616,6 +4508,28 @@
     "enddatum":"2026-08-30",
     "slug":"carling_weekend_reading",
     "rawdatum":"27.08.-30.08."
+  },
+  {
+    "id":"mHB",
+    "name":"Suti Festival",
+    "ort":"Benquerença",
+    "land":"pt",
+    "plz":"6090-000",
+    "startdatum":"2026-08-27",
+    "enddatum":"2026-08-30",
+    "slug":"suti_festival",
+    "rawdatum":"27.08.-30.08."
+  },
+  {
+    "id":"Nbk",
+    "name":"Decibel Outdoor",
+    "ort":"Hilvarenbeek",
+    "land":"nl",
+    "plz":"5081 NJ",
+    "startdatum":"2026-08-28",
+    "enddatum":"2026-08-30",
+    "slug":"decibel_outdoor",
+    "rawdatum":"28.08.-30.08."
   },
   {
     "id":"Jft",
@@ -2649,6 +4563,17 @@
     "enddatum":"2026-08-29",
     "slug":"neuborn_open_air",
     "rawdatum":"28.08.-29.08."
+  },
+  {
+    "id":"Zub",
+    "name":"Noisy Festival",
+    "ort":"Hamburg",
+    "land":"de",
+    "plz":"22767",
+    "startdatum":"2026-08-28",
+    "enddatum":"2026-08-30",
+    "slug":"noisy_festival",
+    "rawdatum":"28.08.-30.08."
   },
   {
     "id":"MNv",
@@ -2739,6 +4664,28 @@
     "rawdatum":"04.09.-06.09."
   },
   {
+    "id":"5AZ",
+    "name":"Pell-Mell Festival",
+    "ort":"Obererbach",
+    "land":"de",
+    "plz":"56414",
+    "startdatum":"2026-09-04",
+    "enddatum":"2026-09-05",
+    "slug":"pell_mell_festival",
+    "rawdatum":"04.09.-05.09."
+  },
+  {
+    "id":"8-3",
+    "name":"Sound City Festival",
+    "ort":"Gloucester",
+    "land":"uk",
+    "plz":"GL1 GL4",
+    "startdatum":"2026-09-04",
+    "enddatum":"2026-09-06",
+    "slug":"sound_city_festival",
+    "rawdatum":"04.09.-06.09."
+  },
+  {
     "id":"CE-",
     "name":"Wassenrock",
     "ort":"Wassenberg",
@@ -2758,6 +4705,17 @@
     "startdatum":"2026-09-05",
     "enddatum":"2026-09-05",
     "slug":"strabi_fesitval",
+    "rawdatum":"05.09."
+  },
+  {
+    "id":"PYx",
+    "name":"Strandfieber Festival",
+    "ort":"Goldenstedt",
+    "land":"de",
+    "plz":"49424",
+    "startdatum":"2026-09-05",
+    "enddatum":"2026-09-05",
+    "slug":"strandfieber",
     "rawdatum":"05.09."
   },
   {
@@ -2783,6 +4741,17 @@
     "rawdatum":"11.09.-12.09."
   },
   {
+    "id":"Tu-",
+    "name":"Heavy Metal Fans Festival",
+    "ort":"Hagen",
+    "land":"de",
+    "plz":"58119",
+    "startdatum":"2026-09-11",
+    "enddatum":"2026-09-12",
+    "slug":"heavy_metal_fans_festival",
+    "rawdatum":"11.09.-12.09."
+  },
+  {
     "id":"Kph",
     "name":"Umsonst und Draussen Zollernalb",
     "ort":"Bisingen",
@@ -2792,6 +4761,17 @@
     "enddatum":"2026-09-12",
     "slug":"umsonst_und_draussen_zollernalb",
     "rawdatum":"11.09.-12.09."
+  },
+  {
+    "id":"NN-",
+    "name":"Americana-Celtic Folk Festival",
+    "ort":"Glauburg",
+    "land":"de",
+    "plz":"63695",
+    "startdatum":"2026-09-12",
+    "enddatum":"2026-09-12",
+    "slug":"americana_celtic_folk_festival",
+    "rawdatum":"12.09."
   },
   {
     "id":"Zbw",
@@ -2838,6 +4818,17 @@
     "rawdatum":"19.09."
   },
   {
+    "id":"KUj",
+    "name":"Ragers Elite Festival",
+    "ort":"Hamm",
+    "land":"de",
+    "plz":"59075",
+    "startdatum":"2026-09-19",
+    "enddatum":"2026-09-19",
+    "slug":"ragers_elite_festival",
+    "rawdatum":"19.09."
+  },
+  {
     "id":"pyl",
     "name":"Titanium Festival",
     "ort":"Vianen",
@@ -2847,6 +4838,28 @@
     "enddatum":"2026-09-19",
     "slug":"titanium_festival",
     "rawdatum":"19.09."
+  },
+  {
+    "id":"gFQ",
+    "name":"Transition Festival",
+    "ort":"Almonte",
+    "land":"es",
+    "plz":"21730",
+    "startdatum":"2026-09-22",
+    "enddatum":"2026-09-28",
+    "slug":"transition_festival",
+    "rawdatum":"22.09.-28.09."
+  },
+  {
+    "id":"iCw",
+    "name":"Crewsade of Metal",
+    "ort":"Pfaffenhofen an der Ilm",
+    "land":"de",
+    "plz":"85276",
+    "startdatum":"2026-09-26",
+    "enddatum":"2026-09-27",
+    "slug":"crewsade_of_metal",
+    "rawdatum":"26.09.-27.09."
   },
   {
     "id":"F0f",
@@ -2871,15 +4884,37 @@
     "rawdatum":"26.09."
   },
   {
+    "id":"C_K",
+    "name":"Monster Festival",
+    "ort":"Geiselwind",
+    "land":"de",
+    "plz":"96160",
+    "startdatum":"2026-10-02",
+    "enddatum":"2026-10-03",
+    "slug":"f_e_k_9_deutschrock_monster_festival",
+    "rawdatum":"02.10.-03.10."
+  },
+  {
+    "id":"WwG",
+    "name":"Harburger Skacore und Reggaeexplosion",
+    "ort":"Hamburg",
+    "land":"de",
+    "plz":"21079",
+    "startdatum":"2026-10-07",
+    "enddatum":"2026-10-07",
+    "slug":"reggae_und_ska_festival",
+    "rawdatum":"07.10."
+  },
+  {
     "id":"ixr",
     "name":"Digitalanalog",
     "ort":"München",
     "land":"de",
     "plz":"81667",
     "startdatum":"2026-10-09",
-    "enddatum":"2026-10-10",
+    "enddatum":"2026-10-11",
     "slug":"digitalanalog",
-    "rawdatum":"09.10.-10.10."
+    "rawdatum":"09.10.-11.10."
   },
   {
     "id":"S2b",
@@ -2902,6 +4937,17 @@
     "enddatum":"2026-10-10",
     "slug":"female_fronted_rock",
     "rawdatum":"10.10."
+  },
+  {
+    "id":"UM-",
+    "name":"Scottish Night",
+    "ort":"Neuhaus an der Oste",
+    "land":"de",
+    "plz":"21785",
+    "startdatum":"2026-10-17",
+    "enddatum":"2026-10-17",
+    "slug":"scottish_night",
+    "rawdatum":"17.10."
   },
   {
     "id":"anT",
@@ -2957,5 +5003,16 @@
     "enddatum":"2026-11-07",
     "slug":"moskitos_festival",
     "rawdatum":"06.11.-07.11."
+  },
+  {
+    "id":"U6X",
+    "name":"Scheunenrock",
+    "ort":"Salzkotten",
+    "land":"de",
+    "plz":"33154",
+    "startdatum":"2026-11-07",
+    "enddatum":"2026-11-07",
+    "slug":"scheunenrock",
+    "rawdatum":"07.11."
   }
 ]
